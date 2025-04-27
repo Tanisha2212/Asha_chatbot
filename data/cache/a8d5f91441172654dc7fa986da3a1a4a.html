@@ -1,0 +1,1788 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    
+        <title>Home | Gender Data Portal | World Bank Gender Data Portal</title>
+        
+    
+    
+ 	
+	
+    <meta name="template" content="gender-data-static-page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
+    
+    
+   <meta name="robots" content="index, follow"/>
+   
+      <meta property="og:type" content="website"/>
+   
+   
+      <meta property="og:site_name" content="World Bank Gender Data Portal"/>
+   
+   
+      <meta property="og:title" content="Home | Gender Data Portal | World Bank Gender Data Portal"/>
+   
+   
+      <meta property="og:description" content="The Gender Data Portal is the World Bank Group’s comprehensive source for the latest sex-disaggregated data and gender statistics across a variety of topics."/>
+      <meta name="description" content="The Gender Data Portal is the World Bank Group’s comprehensive source for the latest sex-disaggregated data and gender statistics across a variety of topics."/>
+   
+   
+      <meta property="og:url" content="https://liveprod.worldbank.org/en/home"/>
+   
+    
+      <meta property="og:image" content="/content/dam/sites/data/gender-data/img/share-image.jpg"/>
+   
+
+   <!-- Twitter metadata -->
+   
+      <meta name="twitter:card" content="summary"/>
+   
+   
+      <meta name="twitter:site" content="WorldBank"/>
+   
+   
+      <meta name="twitter:creator" content="WorldBank"/>
+   
+   
+      <meta name="twitter:title" content="Home | Gender Data Portal | World Bank Gender Data Portal"/>
+   
+   
+      <meta name="twitter:description" content="The Gender Data Portal is the World Bank Group’s comprehensive source for the latest sex-disaggregated data and gender statistics across a variety of topics."/>
+   
+   
+      <meta name="twitter:image" content="/content/dam/sites/data/gender-data/img/share-image.jpg"/>
+   
+
+    
+<meta name="keywords" content=""/>
+
+<script defer="defer" type="text/javascript" src="https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js" data-routing="env=prod,tier=publish,ams=Adobe"></script>
+<link rel="canonical" href="https://liveprod.worldbank.org/en/home"/>
+
+
+    
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/datatopics/clientlibs/clientlib-base.css" type="text/css">
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc.clientlibs/datatopics/clientlibs/clientlib-site-publish.css" type="text/css">
+
+
+
+ <link rel="shortcut icon" href="/content/dam/wbr-redesign/logos/wbg-favicon.png" type="image/png"/>
+    
+    
+    
+
+    
+
+    
+    <script src="/etc.clientlibs/datatopics/clientlibs/clientlib-vendor/jquery.js"></script>
+<script src="/etc.clientlibs/datatopics/clientlibs/clientlib-vendor/popper.js"></script>
+<script src="/etc.clientlibs/datatopics/clientlibs/clientlib-vendor/bootstrap.js"></script>
+
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/datatopics/clientlibs/clientlib-site-author-genderdata.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/datatopics/clientlibs/clientlib-site-author.css" type="text/css">
+
+
+    
+    
+
+    
+    
+    
+
+    
+
+    
+<script>
+    var wbgData = wbgData || {};
+    var pageName = ":en:genderdata:home";
+    var title = document.title.replace(/\|.*/, "").trim();
+    var regex = /indicator|countries|regions|topics/;
+    var subsectionP3 = regex.test(pageName) ? title : "";
+
+    wbgData.page = {
+        pageInfo: {
+            pageName: ":en:genderdata:home",
+            pageCategory: "home",
+            pageUid: "f21c1de6-a924-43ea-8393-f3b1258cf4ff",
+            pageFirstPub: "",
+            pageLastMod: "06-28-2024",
+            author: "",
+            topicTag: "",
+            subtopicTag: "",
+            contentType: "homepage",
+            channel: "dec gender equality data and statistics ext",
+            webpackage: ""
+        },
+        sectionInfo: {
+            siteSection: "gender data portal",
+            subsectionP2: "Home | Gender Data Portal",
+            subsectionP3: subsectionP3,
+            subsectionP4: "",
+            subsectionP5: "",
+        }
+    }
+    wbgData.site = {
+        siteInfo: {
+            siteLanguage: "en",
+            siteCountry: "azurestaticapps",
+            siteEnv: "",
+            siteType: "genderdataportal",
+            siteRegion: "",
+            userIpaddressType: "10.47.0.49",
+        },
+        techInfo: {
+            cmsType: "AEM",
+            bussVPUnit: "DEC",
+            bussUnit: "DECDG",
+            bussUserGroup: "external",
+            bussAgency: "IBRD",
+        },
+    }
+
+</script>
+
+<script>
+
+    // Check if the 'usertype' cookie exists
+    var userTypeCookie = getCookie("usertype");
+
+    // If the cookie exists and has a value, set the user type from the cookie
+    if (userTypeCookie) {
+        wbgData.userType = userTypeCookie;
+
+        // Assuming _satellite is globally available for tracking
+        _satellite.track("dynamicdata");
+        console.log("after track");
+    } else {
+        // If the cookie doesn't exist, make an HTTP call to determine the user type
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://wwwstg.worldbank.org/wbg/aem/service/meetings/checkinternal", true);
+        xhr.timeout = 1000;
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    var response = xhr.responseText;
+                    wbgData.userType = "internal";
+
+                    var currentDate = new Date();
+                    currentDate.setFullYear(currentDate.getFullYear() + 50); // 50 years from now
+                    var expires = currentDate.toUTCString();
+
+                    // Set the 'usertype' cookie
+                    document.cookie = "usertype=internal; expires=" + expires + "; path=/";
+
+                    // Assuming _satellite is globally available for tracking
+                    _satellite.track("dynamicdata");
+                } else if (xhr.status === 400) {
+                    // Handle 400 response
+                    document.cookie = "usertype=external; expires=" + expires + "; path=/";
+
+                    // Assuming _satellite is globally available for tracking
+                    _satellite.track("dynamicdata");
+                } else {
+                    // Handle other response statuses
+                    document.cookie = "usertype=external; expires=" + expires + "; path=/";
+
+                    // Assuming _satellite is globally available for tracking
+                    _satellite.track("dynamicdata");
+                }
+            }
+        };
+
+        xhr.ontimeout = function() {
+            // Handle timeout
+        };
+
+        xhr.onerror = function() {
+            // Handle error
+        };
+
+        xhr.send();
+    }
+
+    // Function to get cookie value by name
+    function getCookie(name) {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return null;
+    }
+
+
+</script>
+<script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/launch-7bc0cdc67098.min.js" async></script>
+
+<script>
+
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        if (match) return match[2];
+        return null;
+    }
+
+
+    var dataplayground = false;
+
+    if(getCookie('dataplayground') == 'true'){
+
+        dataplayground =true;
+    }
+
+    targetPageParams = function() {
+        return {
+            "dataplayground": dataplayground
+        };
+    };
+
+</script>
+    
+
+
+</head>
+    <body class="page-static page basicpage" id="page-static-f90ebe2a4c" data-cmp-link-accessibility-enabled data-cmp-link-accessibility-text="opens in a new tab">
+        
+        
+        
+            
+
+
+
+
+            
+<div class="root container responsivegrid">
+
+    
+    <div id="container-d7dba31181" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <header class="experiencefragment lp__navbar lp__navbar_default aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-20a89fe5e8" class="cmp-experiencefragment cmp-experiencefragment--static-header">
+
+
+    
+    <div id="container-ebfa66385f" class="cmp-container" role="header">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid gray-top-bar aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-ef078d75ef" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-06d08b83cc" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="genderbreadcrumb dtbreadcrumb aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+
+
+	<div class="breadcrumb">
+		<nav class="cmp-breadcrumb" aria-label="Breadcrumb">
+	        <ol class="cmp-breadcrumb__list">
+	            <li class="cmp-breadcrumb__item">
+	                <a class="cmp-breadcrumb__item-link" href="https://data.worldbank.org/" target="_self">
+	                    <span>Open Data</span>
+	                </a>
+	            </li>
+
+	        </ol>
+	    </nav>
+	</div>
+    </div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-cc1a72dac6" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-f12e7fd01e" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="headerlogosection aem-GridColumn aem-GridColumn--default--12">
+	
+    
+
+	<a tabindex="0" id="skip-to-main-content" class="visually-hidden focusable" href="#main">Skip to Main Navigation</a>
+	<div class="lp__navbar_header">
+		<a href="https://www.worldbank.org/en/home" class="lp__navbar_brand hidden-xs"><img title="World Bank logo" alt="World Bank logo" src="/content/dam/sites/data/gender-data/img/logo/Logo.svg" loading="eager" class="img-responsive"/> </a>
+		<a class="lp__navbar_brand hidden-lg hidden-md hidden-sm" href="https://www.worldbank.org/en/home">
+			<img alt="The World Bank logo" class="img-responsive" src="/content/dam/datatopics/globe.svg" loading="eager" title="The World Bank logo"/>
+		</a>
+		<div class="lp__navbar_text"><a href="/en/home">Gender Data Portal</a></div>
+
+	</div><!-- End Logo Section -->
+    
+	<div class="tui__search_wrapper tui__primary_search hidden-sm hidden-xs" id="global-search-section-configure" searchApiUrl="https://webapi.worldbank.org/aemsite/genderdata/global/search" searchApiKey="a02440fa123c4740a83ed288591eafe4">
+		<form class="tui__input_group" name="searchbox" action="" onsubmit="" method="post">
+			<input type="search" placeholder="Examples: South Asia, time use, GBV, etc." class="search-input-field" name="qterm" id="search-Keyword" aria-label="Keyword examples"/>
+			<button id="wbData-clear" class="wbData-clear close-btn" type="reset" value="Reset" aria-label="delete search term"><span class="sr-only">search</span></button>
+			<button type="submit" title="Search" class="tui__submit_icon"><span class="sr-only" aria-hidden="true">Search button</span></button>
+			<input type="hidden" name="lang_exact" value="English"/>
+		</form>
+	</div>
+
+<button type="button" class="lp__navbar_toggle collapsed" data-toggle="collapse" data-target="#bpp-collapsedContent" aria-expanded="false" aria-controls="menuItems" aria-label="menu">
+</button></div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid bg__blue lp__navbar_sticky aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-2e1d4c3012" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-2a34ece43d" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="headernavigation aem-GridColumn aem-GridColumn--default--12">
+   
+    
+
+   
+      <div class="lp__navbar_collapse collapse" id="bpp-collapsedContent">
+         <nav>
+            <div class="tui__search_wrapper tui__primary_search hidden-lg hidden-md">
+               <form class="tui__input_group" name="searchbox" action="" onsubmit="" method="post">
+                  <input type="search" placeholder="Examples: South Asia, time use, GBV, etc." class="search-input-field" name="qterm" id="m-search-Keyword" aria-label="Keyword examples"/>
+                  <button id="wbData-clear" class="wbData-clear close-btn" type="reset" value="Reset" aria-label="delete search term">
+                  <span class="sr-only">search</span>
+                  </button>
+                  <button type="submit" title="Search" class="tui__submit_icon">
+                  <span class="sr-only" aria-hidden="true">Search button</span>
+                  </button>
+                  <input type="hidden" name="lang_exact" value="English"/>
+               </form>
+            </div>
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem active" href="/en/home">Home</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/economies">Economies</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/topics">Topics</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/data-stories">Data Stories</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/data-availability">Data Availability</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/resources">Resources</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/indicators">All Indicators</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+               
+               
+                  <ul class="lp__navbar_nav">
+                     <li class="lp__navbar_list">
+                        
+                        
+                           <a class="lp__navbar_listitem " href="/en/about">About</a>
+                        
+                     </li>
+                  </ul>
+               
+            
+         </nav>
+         
+      </div>
+   
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</header>
+<main class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="main" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid full_row_dark_blue_components tui__full_row_banner aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-cb2363ba45" class="cmp-container" style="background-image:url(\2f content\2f dam\2fsites\2f data\2fgender-data\2fimg\2f background\2fhome-lines-Bg.png);background-size:cover;background-repeat:no-repeat;">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-f0f5e9598e" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="teaser lp__banner_teaser tui__full_image_banner aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+	<div class="cmp-teaser">
+	
+     	<div class="cmp-teaser__content">
+            
+    <h1 class="cmp-teaser__title">
+         Gender Data Portal 
+    </h1>
+
+            
+    
+
+            
+    <div class="cmp-teaser__description"><p>The World Bank's Gender Data Portal makes the latest gender statistics accessible through compelling narratives and data visualizations to improve the understanding of gender data and facilitate analyses that inform policy choices.</p>
+</div>
+
+			
+    
+
+        </div>
+
+         
+
+         
+</div>
+
+    
+
+
+
+
+
+
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--offset--default--6 aem-GridColumn aem-GridColumn--default--6">
+
+    
+    <div id="container-c2c443fe57" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--6 aem-Grid--default--6 aem-Grid--phone--6 ">
+    
+    <div class="button tui__gdpbanner_btn aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--4 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+
+
+    
+
+<a id="btntoursite" class="cmp-button" href="#">
+    
+    <span class="cmp-button__icon cmp-button__icon lp lp-info-circle" aria-hidden="true"></span>
+
+    <span class="cmp-button__text">Tour the site</span>
+</a>
+
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
+<script src="/etc.clientlibs/datatopics/components/button/clientlibs/site.js"></script>
+
+
+
+
+</div>
+<div class="button tui__gdpbanner_btn aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--4 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+
+
+    
+
+<a id="button-a38b87d4ab" class="cmp-button" href="/en/about">
+    
+    <span class="cmp-button__icon cmp-button__icon lp lp-question-circle" aria-hidden="true"></span>
+
+    <span class="cmp-button__text">Help</span>
+</a>
+
+    
+
+
+
+
+</div>
+<div class="embed tui__gdpbanner_btn aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--4 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<div id="embed-4d9ae19ca0" class="cmp-embed">
+    
+    <button type="button" class="tui__btn tui__btn_ml lp__solid_lightblue_btn" data-toggle="modal" data-target="#exampleModal"><i class="lp lp-comment-alt
+"></i> Feedback</button>
+            <div class="modal fade" data-backdrop="static" id="exampleModal" tabindex="-1"aria-hidden="true">
+               <div class="modal-dialog">
+                  
+            <button type="button" class="close-btn" data-dismiss="modal">Close</button>
+               <iframe name="uvw-iframe-undefined" class="uvw-dialog-iframe" frameborder="0" title="UserVoice Widget" src="https://datahelpdesk.worldbank.org/clients/widgets/classic_widget?mode=support&link_color=1f95dd&topic_id=151279&primary_color=54584c&custom_template_id=3202&embed_type=lightbox&magic_auth_enabled=true&contact_enabled=true&feedback_enabled=false&custom_fields=eyJPcmlnaW4iOiJEYXRhIn0%3D&strings=e30%3D&referrer=https%3A%2F%2Fdata.worldbank.org%2F"></iframe>
+                
+               </div>
+            </div>
+    
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid full-row-gray-components aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-acb7e82138" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container data-flex-2column tui__relative_Wrapper aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-efe03f6c82" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-02d7911733" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--desktop--12 aem-Grid--phone--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--desktop--12 aem-GridColumn--offset--desktop--0 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--desktop--none aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6">
+
+    
+    <div id="container-456562c9ad" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--12 aem-Grid--phone--12 ">
+    
+    <div class="title tui__section_title aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--desktop--6 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+<div id="title-aebf937c4a" class="cmp-title">
+    <h2 class="cmp-title__text">Explore the Data</h2>
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn--offset--desktop--11 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--desktop--none aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--desktop--1 aem-GridColumn--default--6">
+
+    
+    <div id="homepage_download" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--1 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--desktop--1 aem-GridColumn--default--6">
+<div id="text-2f6a9ef254" class="cmp-text">
+    <p>Download the Full Dataset</p>
+
+</div>
+
+    
+
+</div>
+<div class="button aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--desktop--1 aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+
+    
+
+<a id="button-e7e450182e" class="cmp-button" href="https://databank.worldbank.org/data/download/Gender_Stats_CSV.zip">
+    
+    <span class="cmp-button__icon cmp-button__icon lp lp-file-csv" aria-hidden="true"></span>
+
+    <span class="cmp-button__text">CSV</span>
+</a>
+
+    
+
+
+
+
+</div>
+<div class="button aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--desktop--1 aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+
+    
+
+<a id="button-7cb1f4c584" class="cmp-button" href="https://databank.worldbank.org/data/download/Gender_Stats_EXCEL.zip">
+    
+    <span class="cmp-button__icon cmp-button__icon lp lp-file-excel" aria-hidden="true"></span>
+
+    <span class="cmp-button__text">Excel</span>
+</a>
+
+    
+
+
+
+
+</div>
+<div class="button aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--desktop--1 aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+
+    
+
+<a id="button-faf916a335" class="cmp-button" href="/en/help#AccessAPI">
+    
+    <span class="cmp-button__icon cmp-button__icon lp lp-external-link" aria-hidden="true"></span>
+
+    <span class="cmp-button__text">API</span>
+</a>
+
+    
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="multiimagecard aem-GridColumn aem-GridColumn--default--12">
+    
+<link rel="stylesheet" href="/etc.clientlibs/datatopics/components/genderdata/multiimagecard/clientlibs/site.css" type="text/css">
+
+
+
+
+
+    
+
+
+
+
+
+	<div class="multicard_flex">
+    
+	<div id="cardsPerPage" style="display: none;">6</div>
+	
+		
+			<div class="teaser tui__primary_card multiimagesinglecard aem-GridColumn--default--4 aem-GridColumn--desktop--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12 multiimagecardsshow">
+			  <div class="cmp-teaser">
+                <div class="cmp-teaser__image">
+                	<div class="cmp-image">
+                    	<img src="https://s7d1.scene7.com/is/image/wbcollab/country-2?qlt=90&fmt=webp" loading="lazy" class="cmp-image__image" alt="Economies and Regions" title="Economies and Regions"/>
+                    </div>
+                </div>
+				<div class="cmp-teaser__content">
+				  <h2 class="cmp-teaser__title"> <a href="/en/economies" target="_self">Economies and Regions</a></h2>
+				  <div class="cmp-teaser__description">Get an overview of an economy’s or region’s gender landscape through 14 visualized indicators. Download and share the economy profile as a PDF.
+				  </div>
+				</div>
+                <a class="cmp-teaser__link lp__overlay-link" aria-hidden="true" tabindex="-1" href="/en/economies" target="_self"></a>
+			</div>
+			</div>
+		
+			<div class="teaser tui__primary_card multiimagesinglecard aem-GridColumn--default--4 aem-GridColumn--desktop--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12 multiimagecardsshow">
+			  <div class="cmp-teaser">
+                <div class="cmp-teaser__image">
+                	<div class="cmp-image">
+                    	<img src="https://s7d1.scene7.com/is/image/wbcollab/topic-1?qlt=90&fmt=webp" loading="lazy" class="cmp-image__image" alt="Topics" title="Topics"/>
+                    </div>
+                </div>
+				<div class="cmp-teaser__content">
+				  <h2 class="cmp-teaser__title"> <a href="/en/topics" target="_self">Topics</a></h2>
+				  <div class="cmp-teaser__description">Familiarize yourself with key indicators and content for specific topics. Browse the full list of indicators per topic.
+				  </div>
+				</div>
+                <a class="cmp-teaser__link lp__overlay-link" aria-hidden="true" tabindex="-1" href="/en/topics" target="_self"></a>
+			</div>
+			</div>
+		
+			<div class="teaser tui__primary_card multiimagesinglecard aem-GridColumn--default--4 aem-GridColumn--desktop--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12 multiimagecardsshow">
+			  <div class="cmp-teaser">
+                <div class="cmp-teaser__image">
+                	<div class="cmp-image">
+                    	<img src="https://s7d1.scene7.com/is/image/wbcollab/data-availability-1?qlt=90&fmt=webp" loading="lazy" class="cmp-image__image" alt="Data Availability" title="Data Availability"/>
+                    </div>
+                </div>
+				<div class="cmp-teaser__content">
+				  <h2 class="cmp-teaser__title"> <a href="/en/data-availability" target="_self">Data Availability</a></h2>
+				  <div class="cmp-teaser__description">Explore availability of gender data for a given economy or indicator. Read about how the World Bank is filling gender data gaps.
+				  </div>
+				</div>
+                <a class="cmp-teaser__link lp__overlay-link" aria-hidden="true" tabindex="-1" href="/en/data-availability" target="_self"></a>
+			</div>
+			</div>
+		
+		
+	
+</div>
+
+
+
+
+    
+<script src="/etc.clientlibs/datatopics/components/genderdata/multiimagecard/clientlibs/site.js"></script>
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid bg__white aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-e6c8b76034" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-448720ba8e" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="title tui__section_title aem-GridColumn aem-GridColumn--default--12">
+<div id="homepage_data_exploration" class="cmp-title">
+    <h2 class="cmp-title__text">Data Exploration Tool</h2>
+</div>
+
+    
+
+</div>
+<div class="text tui__section_title aem-GridColumn aem-GridColumn--default--12">
+<div id="text-d54240bc66" class="cmp-text">
+    <p>To dive deeper into a particular indicator, use the data exploration tool to explore, download, and share data and visualizations for 1000+ indicators in five views – map, line, bar, scatterplot, data table. Below is a preview of the tool using an example indicator. Use the search bar to explore a different indicator.</p>
+
+</div>
+
+    
+
+</div>
+<div class="datatopicsreactapp parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+ 
+    <link rel="stylesheet" href="/etc.clientlibs/worldbank-spa/clientlibs/clientlib-react-gender-indicator-detail.css" type="text/css">
+
+    
+
+
+
+<div id ="root" class="root-selector" data-mode="publish"data-isHome="home" data-indicatorid="sl-tlf-acti-zs" data-path-publish="https://genderdata.worldbank.org/en/indicator"  root-name="root" ></div>
+
+
+    <script src="/etc.clientlibs/worldbank-spa/clientlibs/clientlib-react-gender-indicator-detail.js"></script>
+     
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid full_row_yellow_components aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-c0f32b6378" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-0e0cc34f31" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-cd69b7d121" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="columncontrol aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+
+
+
+
+
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+        
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--9 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--9 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-f75d84ae8a" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--9 aem-Grid--tablet--12 aem-Grid--default--9 aem-Grid--desktop--9 aem-Grid--phone--12 ">
+    
+    <div class="text tui__section_title aem-GridColumn--tablet--12 aem-GridColumn--desktop--9 aem-GridColumn--phone--12 aem-GridColumn--default--9 aem-GridColumn">
+<div id="text-3433dbce95" class="cmp-text">
+    <h2>Insights</h2>
+<p>Explore our featured data stories, resources, economies, and topics. This section is updated on a rotating basis to highlight the most relevant information for users related to international days and current events.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--3 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--3 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-2e156f308b" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--3 aem-Grid--tablet--12 aem-Grid--default--3 aem-Grid--desktop--3 aem-Grid--phone--12 ">
+    
+    <div class="button view-all-link aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--desktop--3 aem-GridColumn--default--3">
+
+
+    
+
+<a id="button-4cdea919f1" class="cmp-button" href="/en/data-stories">
+    
+    
+
+    <span class="cmp-button__text">All Data Stories</span>
+</a>
+
+    
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+     </div>
+                
+
+
+            
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="columncontrol tui_flexcard_wrapper aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+
+
+
+
+
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+        
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--6 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--6 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-6c230df0d4" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--6 aem-Grid--phone--12 ">
+    
+    <div class="teaser tui__primary_card aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--desktop--6 aem-GridColumn aem-GridColumn--default--6">
+
+
+
+
+
+	<div class="cmp-teaser">
+	<div class="cmp-teaser__image">
+	    <div class="cmp-teaser__image">
+		    <a class="cmp-image__link" data-cmp-clickable href="https://www.worldbank.org/en/topic/gender/brief/gender-strategy-update-2024-30-accelerating-equality-and-empowerment-for-all" target="_self"> 
+		        <img src="https://s7d1.scene7.com/is/image/wbcollab/gender-strategy-2024-2030-profile-illustration-of-men-and-women?qlt=100&resMode=sharp2&wid=780&hei=439" loading="lazy" class="cmp-image__image" itemprop="contentUrl" title="World Bank Group Gender Strategy 2024-2030"/>
+		    </a>
+     	</div>
+     </div>
+     	<div class="cmp-teaser__content">
+            
+    <h2 class="cmp-teaser__title">
+        <a class="cmp-teaser__title-link" href="https://www.worldbank.org/en/topic/gender/brief/gender-strategy-update-2024-30-accelerating-equality-and-empowerment-for-all" target="_self" data-text="World Bank Group Gender Strategy 2024-2030" data-customlink="nl:body content">World Bank Group Gender Strategy 2024-2030</a>
+    </h2>
+
+            
+    
+
+            
+    <div class="cmp-teaser__description"><p>Learn all about the new WBG Gender Strategy 2024-30 which puts forward the bold ambition to accelerate gender equality to end poverty on a livable planet.</p>
+</div>
+
+			
+    
+
+        </div>
+
+         <a class="cmp-teaser__link ifc__overlay-link" aria-hidden="true" tabindex="-1" href="https://www.worldbank.org/en/topic/gender/brief/gender-strategy-update-2024-30-accelerating-equality-and-empowerment-for-all">
+
+         </a>
+</div>
+
+    
+
+
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--6 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--6 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-b7cc561b89" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--6 aem-Grid--phone--12 ">
+    
+    <div class="teaser tui__primary_card aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--desktop--6 aem-GridColumn aem-GridColumn--default--6">
+
+
+
+
+
+	<div class="cmp-teaser">
+	<div class="cmp-teaser__image">
+	    <div class="cmp-teaser__image">
+		    <a class="cmp-image__link" data-cmp-clickable href="/en/data-stories/a-tale-of-old-and-new-gender-gaps" target="_self"> 
+		        <img srcset="https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z:1440x514?qlt=100&amp;resMode=sharp2&amp;wid=780&amp;hei=439 1200w,https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z:900x500?qlt=100&amp;resMode=sharp2&amp;wid=780&amp;hei=439 992w,https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z:768x500?qlt=100&amp;resMode=sharp2&amp;wid=780&amp;hei=439 768w,https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z:750x422?qlt=100&amp;resMode=sharp2&amp;wid=780&amp;hei=439 576w,https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z:458x257?qlt=100&amp;resMode=sharp2&amp;wid=780&amp;hei=439 320w" src="https://s7d1.scene7.com/is/image/wbcollab/33511740996-bd2e1d1b81-z?qlt=100&resMode=sharp2&wid=780&hei=439" loading="lazy" class="cmp-image__image" itemprop="contentUrl" title="Progress on girls’ education"/>
+		    </a>
+     	</div>
+     </div>
+     	<div class="cmp-teaser__content">
+            
+    <h2 class="cmp-teaser__title">
+        <a class="cmp-teaser__title-link" href="/en/data-stories/a-tale-of-old-and-new-gender-gaps" target="_self">Progress on girls’ education</a>
+    </h2>
+
+            
+    
+
+            
+    <div class="cmp-teaser__description"><p>Explore where girls have been catching up on educational opportunities and what challenges remain for both boys and girls.</p>
+</div>
+
+			
+    
+
+        </div>
+
+         <a class="cmp-teaser__link ifc__overlay-link" aria-hidden="true" tabindex="-1" href="/en/data-stories/a-tale-of-old-and-new-gender-gaps">
+
+         </a>
+</div>
+
+    
+
+
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+     </div>
+                
+
+
+            
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-95289c6ee6" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="container responsivegrid full_row_primary_blue_components tui__body_content data-body-content aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-67c933a68b" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid touchui-container aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-583a1ba8f9" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="columncontrol aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+
+
+
+
+
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+        
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--6 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--6 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-4379677652" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--6 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--desktop--6 aem-GridColumn aem-GridColumn--default--6">
+<div id="text-b1be72c874" class="cmp-text">
+    <h2><a href="/en/help" target="_blank">Learn more</a></h2>
+<p>The Gender Data Portal is more than just a database of sex-disaggregated data and gender statistics. Browse data tips and free training and courses on the Help page. Explore data availability, toolkits, and resources using the links to the right.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+            <div class="container responsivegrid aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--tablet--none aem-GridColumn--default--6 aem-GridColumn--offset--default--0 aem-GridColumn--default--none aem-GridColumn--desktop--6 aem-GridColumn--offset--desktop--0 aem-GridColumn--desktop--none aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--phone--none">
+                
+
+    
+    <div id="container-2b772a1572" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--desktop--6 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--desktop--6 aem-GridColumn aem-GridColumn--default--6">
+<div id="text-3dfdede5a5" class="cmp-text">
+    <h3><a href="/en/data-availability" target="_blank">Filling Gender Data Gaps</a><br />
+</h3>
+<p>Learn about which indicators and economies have the least data coverage and the World Bank’s efforts to fill data gaps in gender data measurement and collection.</p>
+<h3><a href="/en/resources" target="_blank">More Gender Data Resources</a></h3>
+<p>Access guidelines to collecting sex-disaggregated data, lists of gender data portals and national statistical offices with gender sites, gender-related datasets, and visualizations among other resources.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+            </div>
+                
+         
+     </div>
+                
+
+
+            
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</main>
+<footer class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-6dfce3c586" class="cmp-experiencefragment cmp-experiencefragment--static-footer">
+
+
+    
+    <div id="container-4ac4172a14" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="footer aem-GridColumn aem-GridColumn--default--12">
+
+    
+
+
+<div class="full-row-footer-components">
+    <div class="touchui-container">
+		<div class="aem-Grid">
+        <div class=" lp__footer_top aem-GridColumn--desktop--5 aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <div class="lp__footer_menuitem">
+                <div class="aem-GridColumn--default--6 aem-GridColumn--desktop--6  aem-GridColumn--tablet--6 aem-GridColumn--phone--6 aem-GridColumn--xs--6">
+                    <ul>
+                        <li>
+                        	<a href="https://www.worldbank.org/en/about" target="_self">About</a>
+                        </li>
+<li>
+                        	<a href="https://data.worldbank.org/" target="_self">Data</a>
+                        </li>
+<li>
+                        	<a href="https://www.worldbank.org/en/research" target="_self">Research and Publications</a>
+                        </li>
+<li>
+                        	<a href="https://olc.worldbank.org/" target="_self">Learning</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="aem-GridColumn--default--6 aem-GridColumn--desktop--6  aem-GridColumn--tablet--6 aem-GridColumn--phone--6 aem-GridColumn--xs--6">
+                    <ul>
+                        <li>
+                        	<a href="https://www.worldbank.org/en/news" target="_self">News</a>
+                        </li>
+<li>
+                        	<a href="https://projects.worldbank.org/?lang=en" target="_self">Projects and Operations</a>
+                        </li>
+<li>
+                        	<a href="https://www.worldbank.org/en/where-we-work" target="_self">Economies</a>
+                        </li>
+<li>
+                        	<a href="https://www.worldbank.org/en/topic" target="_self">Topics</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End left column footer menu section -->
+        <div class="aem-GridColumn--desktop--7 aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 footer_flex">
+            <hr class="visible-sm visible-xs visible-xxs"/>
+            <div class="aem-GridColumn--desktop--6  aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                <div class="lp__social_icon">
+                    <div class="h6" aria-hidden="true">FOLLOW US</div>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/worldbank" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank Facebook page">
+                           		<img src="/content/dam/worldbanklive/images/logo/fb.svg" loading="lazy" alt="World Bank Facebook page" class="img-responsive"/>
+                           	</a>
+                        </li>
+<li>
+                            <a href="https://www.twitter.com/worldbank" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank x.com page">
+                           		<img src="/content/dam/worldbanklive/images/logo/twitter.svg" loading="lazy" alt="World Bank x.com page" class="img-responsive"/>
+                           	</a>
+                        </li>
+<li>
+                            <a href="https://www.linkedin.com/company/the-world-bank" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank linkedln page">
+                           		<img src="/content/dam/worldbanklive/images/logo/linkedln.svg" loading="lazy" alt="World Bank linkedln page" class="img-responsive"/>
+                           	</a>
+                        </li>
+<li>
+                            <a href="https://instagram.com/worldbank/" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank instagram page">
+                           		<img src="/content/dam/worldbanklive/images/logo/instagram.svg" loading="lazy" alt="World Bank instagram page" class="img-responsive"/>
+                           	</a>
+                        </li>
+<li>
+                            <a href="https://www.youtube.com/user/WorldBank" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank youtube page">
+                           		<img src="/content/dam/worldbanklive/images/logo/youtube.svg" loading="lazy" alt="World Bank youtube page" class="img-responsive"/>
+                           	</a>
+                        </li>
+<li>
+                            <a href="https://www.flickr.com/photos/worldbank" target="_self" class="lp__socialimg" data-customlink="sm:footer" data-text="World Bank flickr page">
+                           		<img src="/content/dam/worldbanklive/images/logo/flickr.svg" loading="lazy" alt="World Bank flickr page" class="img-responsive"/>
+                           	</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="aem-GridColumn--desktop--6  aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+                <div class="lp__footer_newsletter">
+                    <div class="lp__footersearch_section">
+                        <div class="h6">NEWSLETTER</div>
+                        <a href="https://www.worldbank.org/en/newsletter-subscription?worldbankgroup=true&email=&subscribe.x=11&subscribe.y=20" target="_self" class="lp__btn lp__newsletter_btn lp__solid_lightblue_btn lp__cta_btn" data-form="world bank group newsletters::newsletter">SUBSCRIBE HERE</a>
+                    </div>
+                </div>
+                <!-- Begin Language toggler -->
+                <div class="lp__dropdown lp-footer-lang-dropdown">
+                    <span class="lang-lable" id="sr-footertitle">This Site in:</span>
+                    <div class="lp-lang-toggler dropdown">
+                        <button type="button" class="lang-filter-label dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="lang-title" aria-labelledby="sr-footertitle lang-title">English</button>
+                        <ul class="dropdown-menu lp__dropdown_menu lp__secondary_dropdown_menu" aria-labelledby="sr-footertitle">
+                            <li lang="es">
+                            	<a class="dropdown-item" href="https://www.bancomundial.org" target="_self">Español</a>
+                            </li>
+<li lang="fr">
+                            	<a class="dropdown-item" href="https://www.banquemondiale.org" target="_self">Français</a>
+                            </li>
+<li lang="ar">
+                            	<a class="dropdown-item" href="https://www.albankaldawli.org" target="_self">عربي</a>
+                            </li>
+<li lang="ru">
+                            	<a class="dropdown-item" href="https://www.vsemirnyjbank.org" target="_self">Русский</a>
+                            </li>
+<li lang="zh">
+                            	<a class="dropdown-item" href="https://www.shihang.org" target="_self">中文</a>
+                            </li>
+
+                            <li>
+                            	<a class="dropdown-item" href="https://www.worldbank.org/en/language-resources" target="_self">View All</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Language toggler -->
+            </div>
+        </div>
+        <!-- End right column footer follow and newsletter section -->
+        <div class="aem-GridColumn--default--12 aem-GridColumn--desktop--12 aem-GridColumn--tablet--12  aem-GridColumn--phone--12">
+            <div class="lp__footer_bottom">
+                <div class="aem-GridColumn--desktop--7  aem-GridColumn--default--7 aem-GridColumn--tablet--7 aem-GridColumn--phone--12">
+                    <div class="lp__listinline">
+                        <ul>
+                            <li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/about/legal" target="_self">Legal</a>
+                            </li>
+<li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/about/legal/privacy-notice" target="_self">Privacy Notice</a>
+                            </li>
+<li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/who-we-are/site-accessibility" target="_self">Site Accessibility</a>
+                            </li>
+<li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/access-to-information" target="_self">Access to Information</a>
+                            </li>
+<li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/about/careers" target="_self">Jobs</a>
+                            </li>
+<li class="disclaimer">
+                            	<a href="https://www.worldbank.org/en/about/contacts" target="_self">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- End disclaimer-->
+                <div class="aem-GridColumn--desktop--5  aem-GridColumn--default--5 aem-GridColumn--tablet--5 aem-GridColumn--phone--12">
+                    <div class="lp__footer_fraud">
+                        <ul>
+                            <li>
+                            	<a href="https://www.worldbank.org/en/about/legal/scams" target="_self">SCAM ALERT</a>
+                            </li>
+<li>
+                            	<a href="https://wbgcmsprod.microsoftcrmportals.com/en-US/anonymous-users/int-fraud-management/create-new-complaint/" target="_self">REPORT FRAUD OR CORRUPTION</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End disclaimer and copy right -->
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="full-row-footer-black-components">
+    <div class="touchui-container">
+	<div class="aem-Grid">
+        <div class="lp__footer_bottom_left aem-GridColumn--desktop--6  aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <div class="">
+                <ul>
+                    <li>
+                        <a href="https://www.worldbank.org/en/home" target="_self">
+                           	<img src="/content/dam/worldbanklive/images/logo/logo-wbg-footer-en.svg" loading="lazy" class="footer-logo" title="World Bank Group logo" alt="World Bank Group logo"/>
+                        </a>
+                    </li>
+                    <li>
+                       	<a class="lp__wbgpartnership" href="https://www.worldbank.org/en/who-we-are/ibrd" target="_self">IBRD</a>
+                    </li>
+<li>
+                       	<a class="lp__wbgpartnership" href="http://www.worldbank.org/ida" target="_self">IDA</a>
+                    </li>
+<li>
+                       	<a class="lp__wbgpartnership" href="https://www.ifc.org/" target="_self">IFC</a>
+                    </li>
+<li>
+                       	<a class="lp__wbgpartnership" href="https://www.miga.org/" target="_self">MIGA</a>
+                    </li>
+<li>
+                       	<a class="lp__wbgpartnership" href="https://icsid.worldbank.org/" target="_self">ICSID</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- End logo and Wbg partnership -->
+        <div class="lp__copyright aem-GridColumn--desktop--6  aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <div class="">
+                © 2025 The World Bank Group, All Rights Reserved.
+            </div>
+        </div>
+        <!-- End dropdown and fraud  -->
+</div>
+    </div>
+</div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</footer>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+
+<script type="text/javascript">
+    var appInsights=window.appInsights||function(a){
+        function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+    }({
+        instrumentationKey:"2ddee9f8-57ef-4c0e-8810-a2f743116654"
+    });
+
+    window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+    <style>
+        button.feedback-btn {
+            border: 0px;
+            line-height: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 12px;
+            padding: 10px 22px;
+            position: fixed;
+            right: 5%;
+            float: right;
+            background-color: #009fda;
+            bottom: 15px;
+            z-index: 1111;
+            right: 15px;
+        }
+    </style>
+    <div class="feedbackbutton parbase section">
+        <div class="floating-bars">
+            <button type="button" class="feedback-btn" onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=wP6iMWsmZ0y1bieW2PWcNmx7FTHF8GBOqnrrLTJ_-V1UMENWRkRUQlVCUEZaNFBZV1BWRlRCRENRRy4u', '_blank')" id="feedbut1">
+                Feedback Survey
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+            
+    
+    <script src="/etc.clientlibs/datatopics/clientlibs/clientlib-site-author-genderdata.js"></script>
+<script src="/etc.clientlibs/datatopics/components/genderdata/tour-site/clientlib-site-genderdata-toursite.js"></script>
+<script src="/etc.clientlibs/datatopics/clientlibs/clientlib-site-author.js"></script>
+
+
+    
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.js"></script>
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/utils.js"></script>
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/imageDynamicMedia.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.js"></script>
+<script src="/etc.clientlibs/datatopics/clientlibs/clientlib-base.js"></script>
+
+
+
+
+    
+
+    
+
+    
+    
+
+        
+    </body>
+</html>

@@ -1,0 +1,10 @@
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+transformers
+huggingface-hub
+requests
+bs4
+scikit-learn
+tiktoken

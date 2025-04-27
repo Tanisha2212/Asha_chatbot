@@ -1,0 +1,2285 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"576793923",accountID:"3131523",trustKey:"66686",licenseKey:"NRJS-1453243f6d1a5d65c70",applicationID:"571621642"};;/*! For license information please see nr-loader-rum-1.286.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{fn:()=>s,x1:()=>c});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=function(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},5217:(e,t,r)=>{"use strict";r.d(t,{gD:()=>h,xN:()=>m});r(860).K7.genericEvents;const n="experimental.marks",i="experimental.measures",o="experimental.resources",a=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var s=r(2614),c=r(944),u=r(384),d=r(8122);const l="[data-nr-mask]",f=()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(n)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(i)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:s.wk,inactiveMs:s.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){a(t)?e.mask_selector="".concat(t,",").concat(l):""===t||null===t?e.mask_selector=l:(0,c.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){a(t)?e.block_selector+=",".concat(t):""!==t&&(0,c.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,c.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}},g={},p="All configuration objects require an agent identifier!";function m(e,t){if(!e)throw new Error(p);g[e]=(0,d.a)(t,f());const r=(0,u.nY)(e);r&&(r.init=g[e])}function h(e,t){if(!e)throw new Error(p);var r=function(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},u={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0,harvester:void 0},d={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!d[e])throw new Error("Runtime for ".concat(e," was never set"));return d[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");d[e]={...(0,n.a)(t,u),...c},Object.hasOwnProperty.call(d[e],"harvestCount")||Object.defineProperty(d[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=d[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,xv:()=>n});const n="1.286.0",i="PROD",o="CDN"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>o,gm:()=>a,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(6154);const i="newrelic";function o(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>u});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P3[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),g(e,t,!1),s[e].size&&f(e))}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),g(e,t)})))}function g(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function p(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(7836),i=r(3241);const o=new Set,a={};function s(e,t){const r=n.ee.get(t);a[t]??={},e&&"object"==typeof e&&(o.has(t)||(r.emit("rumresp",[e]),a[t]=e,o.add(t),(0,i.W)({agentIdentifier:t,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3434:(e,t,r)=>{"use strict";r.d(t,{Jt:()=>o,YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},993:(e,t,r)=>{"use strict";r.d(t,{A$:()=>o,ET:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o={OFF:0,ERROR:1,WARN:2,INFO:3,DEBUG:4,TRACE:5},a="log";n.K7.logging},8154:(e,t,r)=>{"use strict";r.d(t,{z_:()=>o,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>a});r(6154),r(9566),r(384);const n=r(860).K7.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{G4:()=>i});var n=r(2614);r(860).K7.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.g.ERROR,n.g.FULL,n.g.OFF},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(7836),i=r(1687);class o{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},7603:(e,t,r)=>{"use strict";r.d(t,{j:()=>V});var n=r(860),i=r(2555),o=r(9908),a=r(1687),s=r(5289),c=r(6154),u=r(944),d=r(8154),l=r(384),f=r(6344);const g=["setErrorHandler","finished","addToTrace","addRelease","recordCustomEvent","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",f.G4.RECORD,f.G4.PAUSE,"log","wrapLogger"],p=["setErrorHandler","finished","addToTrace","addRelease"];var m=r(1863),h=r(2614),v=r(993);var b=r(7836),y=r(2646),w=r(3434);const R=new Map;function A(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,u.R)(29);const i=function(e){return(e||b.ee).get("logger")}(e),o=(0,w.YM)(i),a=new y.y(b.P);a.level=n.level,a.customAttributes=n.customAttributes;const s=t[r]?.[w.Jt]||t[r];return R.set(s,a),o.inPlace(t,[r],"wrap-logger-",(()=>R.get(s))),i}var E=r(3241),_=r(5701);function x(){const e=(0,l.pV)();g.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.runtime?e.exposed&&e[t]&&"micro-agent"!==e.runtime.loaderType&&n.push(e[t](...r)):(0,u.R)(38,t)})),n[0]}(t,...r)}))}const N={};function I(e,t){t||(0,a.Ak)(e.agentIdentifier,"api");const l=e.ee.get("tracer");N[e.agentIdentifier]=h.g.OFF,e.ee.on(f.G4.REPLAY_RUNNING,(t=>{N[e.agentIdentifier]=t}));const g="api-",b=g+"ixn-";function y(t,r,n,o){const a=e.info;return null===r?delete a.jsAttributes[t]:(0,i.x1)(e.agentIdentifier,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),x(g,n,!0,o||null===r?"session":void 0)(t,r)}function w(){}e.log=function(t,{customAttributes:r={},level:i=v.p_.INFO}={}){(0,o.p)(d.xV,["API/log/called"],void 0,n.K7.metrics,e.ee),function(e,t,r={},i=v.p_.INFO){(0,o.p)(d.xV,["API/logging/".concat(i.toLowerCase(),"/called")],void 0,n.K7.metrics,e),(0,o.p)(v.ET,[(0,m.t)(),t,r,i],void 0,n.K7.logging,e)}(e.ee,t,r,i)},e.wrapLogger=(t,r,{customAttributes:i={},level:a=v.p_.INFO}={})=>{(0,o.p)(d.xV,["API/wrapLogger/called"],void 0,n.K7.metrics,e.ee),A(e.ee,t,r,{customAttributes:i,level:a})},p.forEach((t=>{e[t]=x(g,t,!0,"api")})),e.addPageAction=x(g,"addPageAction",!0,n.K7.genericEvents),e.recordCustomEvent=x(g,"recordCustomEvent",!0,n.K7.genericEvents),e.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),e.runtime.customTransaction=(r||"http://custom.transaction")+t,x(g,"setPageViewName",!0)()},e.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return y(e,t,"setCustomAttribute",r);(0,u.R)(40,typeof t)}else(0,u.R)(39,typeof e)},e.setUserId=function(e){if("string"==typeof e||null===e)return y("enduser.id",e,"setUserId",!0);(0,u.R)(41,typeof e)},e.setApplicationVersion=function(e){if("string"==typeof e||null===e)return y("application.version",e,"setApplicationVersion",!1);(0,u.R)(42,typeof e)},e.start=()=>{try{(0,o.p)(d.xV,["API/start/called"],void 0,n.K7.metrics,e.ee),e.ee.emit("manual-start-all")}catch(e){(0,u.R)(23,e)}},e[f.G4.RECORD]=function(){(0,o.p)(d.xV,["API/recordReplay/called"],void 0,n.K7.metrics,e.ee),(0,o.p)(f.G4.RECORD,[],void 0,n.K7.sessionReplay,e.ee)},e[f.G4.PAUSE]=function(){(0,o.p)(d.xV,["API/pauseReplay/called"],void 0,n.K7.metrics,e.ee),(0,o.p)(f.G4.PAUSE,[],void 0,n.K7.sessionReplay,e.ee)},e.interaction=function(e){return(new w).get("object"==typeof e?e:{})};const R=w.prototype={createTracer:function(t,r){var i={},a=this,s="function"==typeof r;return(0,o.p)(d.xV,["API/createTracer/called"],void 0,n.K7.metrics,e.ee),e.runSoftNavOverSpa||(0,o.p)(b+"tracer",[(0,m.t)(),t,i],a,n.K7.spa,e.ee),function(){if(l.emit((s?"":"no-")+"fn-start",[(0,m.t)(),a,s],i),s)try{return r.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw l.emit("fn-err",[arguments,this,t],i),t}finally{l.emit("fn-end",[(0,m.t)()],i)}}}};function x(t,r,i,a){return function(){return(0,o.p)(d.xV,["API/"+r+"/called"],void 0,n.K7.metrics,e.ee),(0,E.W)({agentIdentifier:e.agentIdentifier,drained:!!_.B?.[e.agentIdentifier],type:"data",name:"api",feature:t+r,data:{notSpa:i,bufferGroup:a}}),a&&(0,o.p)(t+r,[i?(0,m.t)():performance.now(),...arguments],i?null:this,a,e.ee),i?void 0:this}}function I(){r.e(296).then(r.bind(r,8778)).then((({setAsyncAPI:t})=>{t(e),(0,a.Ze)(e.agentIdentifier,"api")})).catch((t=>{(0,u.R)(27,t),e.ee.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((t=>{R[t]=x(b,t,void 0,e.runSoftNavOverSpa?n.K7.softNav:n.K7.spa)})),e.setCurrentRouteName=e.runSoftNavOverSpa?x(b,"routeName",void 0,n.K7.softNav):x(g,"routeName",!0,n.K7.spa),e.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(d.xV,["API/noticeError/called"],void 0,n.K7.metrics,e.ee),(0,o.p)("err",[t,(0,m.t)(),!1,r,!!N[e.agentIdentifier]],void 0,n.K7.jserrors,e.ee)},c.RI?(0,s.GG)((()=>I()),!0):I(),!0}var k=r(5217),S=r(8122);const T={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},O={};var j=r(3371);const P=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e},K=new Set;function V(e,t={},r,n){let{init:o,info:a,loader_config:s,runtime:u={},exposed:d=!0}=t;u.loaderType=r;const f=(0,l.pV)();a||(o=f.init,a=f.info,s=f.loader_config),(0,k.xN)(e.agentIdentifier,o||{}),function(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");O[e]=(0,S.a)(t,T);const r=(0,l.nY)(e);r&&(r.loader_config=O[e])}(e.agentIdentifier,s||{}),a.jsAttributes??={},c.bv&&(a.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,a);const g=e.init,p=[a.beacon,a.errorBeacon];K.has(e.agentIdentifier)||(g.proxy.assets&&(P(g.proxy.assets),p.push(g.proxy.assets)),g.proxy.beacon&&p.push(g.proxy.beacon),x(),(0,l.US)("activatedFeatures",_.B),e.runSoftNavOverSpa&&=!0===g.soft_navigations.enabled&&g.feature_flags.includes("soft_nav")),u.denyList=[...g.ajax.deny_list||[],...g.ajax.block_internal?p:[]],u.ptid=e.agentIdentifier,(0,j.V)(e.agentIdentifier,u),K.has(e.agentIdentifier)||(e.ee=b.ee.get(e.agentIdentifier),e.exposed=d,I(e,n),(0,E.W)({agentIdentifier:e.agentIdentifier,drained:!!_.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),K.add(e.agentIdentifier)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>s,df:()=>o,qY:()=>n,v4:()=>a});const n="events",i="jserrors",o="browser/blobs",a="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:a,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:o,[c.sessionReplay]:o,[c.logging]:s,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.286.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.286.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={296:"sha512-+MkNp41sKZ0iYMHsept2X5HfDqyTLnDR9rprfuuxTRn6FVcYOei0L1PleWwmSuU2wrJDnMXcNYjTfSPQ3xYU/w=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.286.0.PROD"]=self["webpackChunk:NRBA-1.286.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(){this.agentIdentifier=(0,r.LA)(16)}#e(t,...r){if(this[t]!==n.prototype[t])return this[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}recordCustomEvent(e,t){return this.#e("recordCustomEvent",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}addRelease(e,t){return this.#e("addRelease",e,t)}log(e,t){return this.#e("log",e,t)}}class o extends n{#e(t,...r){if(this[t]!==o.prototype[t]&&this[t]!==n.prototype[t])return this[t](...r);(0,e.R)(35,t)}start(){return this.#e("start")}finished(e){return this.#e("finished",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(5217);const c=Object.values(a.K7);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var d=i(7603);var l=i(1687),f=i(4234),g=i(5289),p=i(6154),m=i(384);const h=e=>p.RI&&!0===(0,s.gD)(e,"privacy.cookies_enabled");function v(e){return!!(0,m.dV)().o.MO&&h(e)&&!0===(0,s.gD)(e,"session_trace.enabled")}var b=i(6389);class y extends f.W{constructor(e,t,r=!0){super(e.agentIdentifier,t),this.auto=r,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===e.init[this.featureName].autoStart&&(this.auto=!1),this.auto?(0,l.Ak)(e.agentIdentifier,t):this.ee.on("manual-start-all",(0,b.J)((()=>{(0,l.Ak)(e.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator(e)})))}importAggregator(t,r={}){if(this.featAggregate||!this.auto)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const o=async()=>{let o;try{if(h(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(296).then(i.bind(i,3861));o=e(t)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K7.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,o))return(0,l.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{lazyFeatureLoader:e}=await i.e(296).then(i.bind(i,6103)),{Aggregate:a}=await e(this.featureName,"aggregate");this.featAggregate=new a(t,r),t.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,l.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};p.RI?(0,g.GG)((()=>o()),!0):o()}#t(e,t){switch(e){case a.K7.sessionReplay:return v(this.agentIdentifier)&&!!t;case a.K7.sessionTrace:return!!t;default:return!0}}}var w=i(6630);class R extends y{static featureName=w.T;constructor(e,t=!0){super(e,w.T,t),this.importAggregator(e)}}var A=i(9908),E=i(2843),_=i(3878),x=i(782),N=i(1863);class I extends y{static featureName=x.T;constructor(e,t=!0){super(e,x.T,t),p.RI&&((0,E.u)((()=>(0,A.p)("docHidden",[(0,N.t)()],void 0,x.T,this.ee)),!0),(0,_.sp)("pagehide",(()=>(0,A.p)("winPagehide",[(0,N.t)()],void 0,x.T,this.ee))),this.importAggregator(e))}}var k=i(8154);class S extends y{static featureName=k.TZ;constructor(e,t=!0){super(e,k.TZ,t),p.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,A.p)(k.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e)}}new class extends o{constructor(t){super(),p.gm?(this.features={},(0,m.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(R),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K7.softNav)),(0,d.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P3[e.featureName]-a.P3[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K7.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K7.softNav)return;const n=function(e){switch(e){case a.K7.ajax:return[a.K7.jserrors];case a.K7.sessionTrace:return[a.K7.ajax,a.K7.pageViewEvent];case a.K7.sessionReplay:return[a.K7.sessionTrace];case a.K7.pageViewTiming:return[a.K7.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,m.Zm)();delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[R,I,S],loaderType:"lite"})})()})();</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJRPLCXTSW"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-HJRPLCXTSW", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location","allow_ad_personalization_signals":false});</script>
+<link rel="canonical" href="https://www.unwomen.org/en" />
+<meta name="robots" content="index, follow" />
+<link rel="shortlink" href="https://www.unwomen.org/en" />
+<meta name="description" content="UN Women is the global champion for gender equality, working to develop and uphold standards and create an environment in which every woman and girl can exercise her human rights and live up to her full potential. We are trusted partners for advocates and decision-makers from all walks of life, and a leader in the effort to achieve gender equality." />
+<meta property="fb:app_id" content="488769704655473" />
+<meta property="og:site_name" content="UN Women" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.unwomen.org/en" />
+<meta property="og:title" content="Welcome" />
+<meta property="og:description" content="UN Women is the global champion for gender equality, working to develop and uphold standards and create an environment in which every woman and girl can exercise her human rights and live up to her full potential. We are trusted partners for advocates and decision-makers from all walks of life, and a leader in the effort to achieve gender equality." />
+<meta property="og:image" content="https://www.unwomen.org/sites/default/files/UN%20Women%20Logos/UN-Women-logo-social-media-1024x512-en.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="UN Women is the global champion for gender equality, working to develop and uphold standards and create an environment in which every woman and girl can exercise her human rights and live up to her full potential. We are trusted partners for advocates and decision-makers from all walks of life, and a leader in the effort to achieve gender equality." />
+<meta name="twitter:site" content="@UN_Women" />
+<meta name="twitter:image" content="https://www.unwomen.org/sites/default/files/UN%20Women%20Logos/UN-Women-logo-social-media-1024x512-en.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/hq/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.unwomen.org/en" />
+<link rel="alternate" hreflang="es" href="https://www.unwomen.org/es" />
+<link rel="alternate" hreflang="fr" href="https://www.unwomen.org/fr" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Welcome | UN Women – Headquarters</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_h_Mo6h82Nq-JhJsN_sEhJXF7X8d0rOblKqvu5BrMj2o.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_nnx4V1oymteGlm8S4ruUYgRQoJkUePZYoh20oDxr81M.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_s73itBU6EicFnrtACvy7o-gNo3XSdANk21NAK1UrQgg.css" />
+
+    
+  </head>
+  <body class="hq-unwomen language_en node-1100 node-type--basic-page frontpage page-node-type-basic-page">
+    <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <header class="header--main-menu" role="banner">
+  
+
+      
+    
+    <div class="region region-top-bar">
+    <div class="top-header__wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="top-header__content">
+              <nav role="navigation" aria-labelledby="block-universalmenuleft-menu" id="block-universalmenuleft">
+            
+  <h2 class="visually-hidden" id="block-universalmenuleft-menu">Universal menu left</h2>
+  
+
+        
+        <ul  class="navbar-nav">
+                      <li class="active nav-item">
+                      <a class="nav-link" href="https://www.unwomen.org/en" title="UN Women Headquarters">Global</a>
+                  </li>
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" id="dropdown-item-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Regional office websites">Regions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown-item-2">
+                      <ul  class="navbar-nav">
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://africa.unwomen.org/en" title="Africa">Africa</a>
+                  </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://lac.unwomen.org/en" title="Americas and the Caribbean">Americas and the Caribbean</a>
+                  </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://arabstates.unwomen.org/en" title="Arab States">Arab States</a>
+                  </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://asiapacific.unwomen.org/en" title="Asia and the Pacific">Asia and the Pacific</a>
+                  </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://eca.unwomen.org/en" title="Europe and Central Asia">Europe and Central Asia</a>
+                  </li>
+          </ul>
+  
+            </div>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-universalmenuright-menu" id="block-universalmenuright">
+            
+  <h2 class="visually-hidden" id="block-universalmenuright-menu">Universal menu right</h2>
+  
+
+        
+        <ul  class="navbar-nav">
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://data.unwomen.org/" title="UN Women Data Hub">Data</a>
+                  </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="https://portal.trainingcentre.unwomen.org/?lang=en" title="UN Women Training Centre">Training</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+  <section id="block-languagedropdownswitcherinterfacetext" class="block block-lang-dropdown block-languagedropdownswitcherinterfacetext">
+          
+            
+
+      <form class="lang-dropdown-form lang_dropdown_form clearfix language_interface" id="lang_dropdown_form_lang-dropdown-form" data-drupal-selector="lang-dropdown-form-2" action="/en" method="post" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-select form-item-lang-dropdown-select js-form-item-lang-dropdown-select form-no-label">
+      <label for="edit-lang-dropdown-select" class="visually-hidden">Select your language</label>
+        <select style="width:165px" class="lang-dropdown-select-element form-select select2-widget" data-lang-dropdown-id="lang-dropdown-form" data-drupal-selector="edit-lang-dropdown-select" id="edit-lang-dropdown-select" name="lang_dropdown_select" data-select2-config="{&quot;multiple&quot;:false,&quot;placeholder&quot;:{&quot;id&quot;:&quot;&quot;,&quot;text&quot;:&quot;- None -&quot;},&quot;allowClear&quot;:true,&quot;dir&quot;:&quot;ltr&quot;,&quot;language&quot;:&quot;en&quot;,&quot;tags&quot;:false,&quot;theme&quot;:&quot;default&quot;,&quot;maximumSelectionLength&quot;:0,&quot;tokenSeparators&quot;:[],&quot;selectOnClose&quot;:false,&quot;width&quot;:&quot;100%&quot;}"><option value=""></option><option value="en" selected="selected">English</option><option value="es">Español</option><option value="fr">Français</option></select>
+        </div>
+
+<input data-drupal-selector="edit-en" type="hidden" name="en" value="/en/homepage" class="form-control" />
+
+<input data-drupal-selector="edit-es" type="hidden" name="es" value="/es/homepage" class="form-control" />
+
+<input data-drupal-selector="edit-fr" type="hidden" name="fr" value="/fr/homepage" class="form-control" />
+<noscript><div>
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Go" class="button js-form-submit form-submit form-control" />
+</div></noscript>
+<input autocomplete="off" data-drupal-selector="form-7abi8jsxg75q1dc4-9qmz3t6ssa5orduxlbqpsu6aa0" type="hidden" name="form_build_id" value="form-7aBi8JSxG75Q1dc4_9QMZ3T6ssA5ORdUXlBQPSU6aA0" class="form-control" />
+
+<input data-drupal-selector="edit-lang-dropdown-form" type="hidden" name="form_id" value="lang_dropdown_form" class="form-control" />
+
+</form>
+
+      </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="nav-wrapper">
+    
+
+  <div class="region region-header">
+    
+<div id="block-hqbrandingnew" class="block--type-image-and-text block block-block-content block-block-contentdece4a7f-2b0f-4043-b2dc-9daf5712e12b">
+    <a href="https://www.unwomen.org/en" title="UN Women logo">
+      
+            <div class="field field--name-field-media-logo field--type-entity-reference field--label-hidden field__item">
+  <div class="image-container">
+    <img loading="lazy" src="/sites/default/files/2025-02/fawag-logo-lockup-colour-301x55-en.png?t=1740761910" width="301" height="55" alt="UN Women/For all women and girls - logo lockup" typeof="foaf:Image" />
+
+  </div>
+</div>
+      
+    </a>
+</div>
+  </div>
+
+    
+  <div class="region region-navbar">
+    
+  <section id="block-main-menu" class="block block-tb-megamenu block-main-menu">
+          
+            
+
+      <div  class="tb-megamenu tb-megamenu-main-menu" role="navigation" aria-label="Main navigation">
+      <div class="nav-collapse  always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-5" role="list" >
+          <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:936a20df-835c-45e8-9f77-7a02c52a42cd" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="Who we are" aria-level="1" >
+  <a href='/en/about-us'  class="dropdown-toggle" title="Who we are" aria-expanded="false">
+        Who we are
+          </a>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="who_we_are_about_us">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockwho-we-are-about-us--2-menu" id="block-menu-blockwho-we-are-about-us--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockwho-we-are-about-us--2-menu">Who we are - About us</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span title="About us">About us</span>
+                                <ul>
+              <li>
+        <a href="/en/about-us/about-un-women" data-drupal-link-system-path="node/40658">About UN Women</a>
+              </li>
+          <li>
+        <a href="/en/about-us/guiding-documents" data-drupal-link-system-path="node/39032">Guiding documents</a>
+              </li>
+          <li>
+        <a href="/en/about-us/business-model" title="UN Women business model" data-drupal-link-system-path="node/180464">Business model</a>
+              </li>
+          <li>
+        <a href="/en/where-we-are" data-drupal-link-system-path="node/48">Worldwide presence</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="who_we_are_leadership">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockwho-we-are-leadership--2-menu" id="block-menu-blockwho-we-are-leadership--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockwho-we-are-leadership--2-menu">Who we are - Leadership</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Leadership</span>
+                                <ul>
+              <li>
+        <a href="/en/about-us/governance" data-drupal-link-system-path="node/4922">Governance structure</a>
+              </li>
+          <li>
+        <a href="/en/about-us/directorate" title="Executive leadership" data-drupal-link-system-path="node/4917">Executive leadership</a>
+              </li>
+          <li>
+        <a href="/en/executive-board" data-drupal-link-system-path="node/5230">Executive Board</a>
+              </li>
+          <li>
+        <a href="/en/about-us/accountability" data-drupal-link-system-path="node/95942">Accountability</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="who_we_are_work_with_us">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockwho-we-are-work-with-us--2-menu" id="block-menu-blockwho-we-are-work-with-us--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockwho-we-are-work-with-us--2-menu">Who we are - Work with us</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Work with us</span>
+                                <ul>
+              <li>
+        <a href="/en/about-us/employment" title="Employment" data-drupal-link-system-path="node/40425">Employment</a>
+              </li>
+          <li>
+        <a href="/en/about-us/procurement" data-drupal-link-system-path="node/40424">Procurement</a>
+              </li>
+          <li>
+        <a href="/en/about-us/programme-implementation#current" data-drupal-link-system-path="node/4940">Calls for proposals</a>
+              </li>
+          <li>
+        <a href="/en/about-us/contact-us" data-drupal-link-system-path="node/5028">Contact us</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_7">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--7" class="block block-quick-node-block block-quick-node-block--7">
+          
+            
+
+      <article data-history-node-id="118264" role="article" about="/en/un-women-strategic-plan-2022-2025" class="node node--type-hq-complex-page node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/un-women-strategic-plan-2022-2025" rel="bookmark" aria-label="UN Women Strategic Plan 2022-2025" title="UN Women Strategic Plan 2022-2025">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2022-06/SP-menu-thumbnail.jpg?t=1655836972" width="312" height="176" alt="UN Women Strategic Plan 2022-2025" loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        UN Women Strategic Plan 2022-2025
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+          <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:e94d15f5-2311-478c-a3d7-bd6186ba3d80" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="What we do" aria-level="1" >
+  <a href='/en/what-we-do'  class="dropdown-toggle" title="What we do" aria-expanded="false">
+        What we do
+          </a>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  data-showblocktitle="0" class="tb-megamenu-column span4 mega-col-nav" data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="what_we_do_focus_area">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockwhat-we-do---2-menu" id="block-menu-blockwhat-we-do---2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockwhat-we-do---2-menu">What we do - Focus area</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span title="Focus areas">Focus areas</span>
+                                <ul>
+              <li>
+        <a href="/en/what-we-do/ending-violence-against-women" data-drupal-link-system-path="node/5044">Ending violence against women</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/peace-and-security" data-drupal-link-system-path="node/5062">Peace and security</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/humanitarian-action" title="Humanitarian action" data-drupal-link-system-path="node/5072">Humanitarian action</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/leadership-and-political-participation" data-drupal-link-system-path="node/5029">Leadership and governance</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/economic-empowerment" data-drupal-link-system-path="node/5037">Economic empowerment</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/innovation-and-technology" data-drupal-link-system-path="node/5115">Innovation and technology</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/women-and-girls-with-disabilities" data-drupal-link-system-path="node/5091">Women with disabilities</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/youth" data-drupal-link-system-path="node/5084">Youth</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/hiv-and-aids" title="HIV and AIDS" data-drupal-link-system-path="node/5095">HIV and AIDS</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span4 mega-col-nav" data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="what_we_do_how_we_work">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockwhat-we-do-how-we-work--2-menu" id="block-menu-blockwhat-we-do-how-we-work--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockwhat-we-do-how-we-work--2-menu">What we do - How we work</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>How we work</span>
+                                <ul>
+              <li>
+        <a href="/en/how-we-work/2030-agenda-for-sustainable-development" data-drupal-link-system-path="node/428439">2030 Agenda for Sustainable Development</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/commission-on-the-status-of-women" title="Commission on the Status of Women" data-drupal-link-system-path="node/437028">Commission on the Status of Women</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/gender-parity-in-the-united-nations" data-drupal-link-system-path="node/5172">Gender parity in the UN system</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/intergovernmental-support" data-drupal-link-system-path="node/41375">Intergovernmental support</a>
+              </li>
+          <li>
+        <a href="/en/partnerships" data-drupal-link-system-path="node/20744">Partnerships</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/research-and-data" data-drupal-link-system-path="node/5182">Research and data</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/capacity-development-and-training" title="Training Centre" data-drupal-link-system-path="node/5180">Training Centre</a>
+              </li>
+          <li>
+        <a href="/en/trust-funds" title="Trust funds" data-drupal-link-system-path="node/5475">Trust funds</a>
+              </li>
+          <li>
+        <a href="/en/how-we-work/un-system-coordination" data-drupal-link-system-path="node/41376">UN system coordination</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span4 mega-col-nav" data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_2">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--8" class="block block-quick-node-block block-quick-node-block--8">
+          
+            
+
+      <article data-history-node-id="376909" role="article" about="/en/what-we-do/gender-equality-accelerators" class="node node--type-hq-complex-page node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/what-we-do/gender-equality-accelerators" rel="bookmark" aria-label="Gender Equality Accelerators" title="Gender Equality Accelerators">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2024-02/gender-equality-accelerators-thumbnail_1.jpg?t=1707237474" width="669" height="446" alt="Gender Equality Accelerators artwork" loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        Gender Equality Accelerators
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+          <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:e37d96d0-2bc8-49db-84c4-4744e2e57cdb" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="News and stories" aria-level="1" >
+  <a href='/en/news-stories'  class="dropdown-toggle" title="News and stories" aria-expanded="false">
+        News and stories
+          </a>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="news_and_stories_latest">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blocknews-and-stories-latest--2-menu" id="block-menu-blocknews-and-stories-latest--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blocknews-and-stories-latest--2-menu">News and Stories - Latest</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Latest</span>
+                                <ul>
+              <li>
+        <a href="/en/news-stories" data-drupal-link-system-path="news-stories">News</a>
+              </li>
+          <li>
+        <a href="/en/articles" title="Articles and explainers" data-drupal-link-system-path="articles">Articles and explainers</a>
+              </li>
+          <li>
+        <a href="/en/articles?f%5B0%5D=article_type%3A4169" title="In focus" data-drupal-link-query="{&quot;f&quot;:[&quot;article_type:4169&quot;]}" data-drupal-link-system-path="articles">In focus</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="news_and_stories_media_center">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blocknews-and-stories-media-center--2-menu" id="block-menu-blocknews-and-stories-media-center--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blocknews-and-stories-media-center--2-menu">News and Stories - Media center</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Media center</span>
+                                <ul>
+              <li>
+        <a href="/en/news-stories?f%5B0%5D=story_type_news_story%3A1460&amp;f%5B1%5D=story_type_news_story%3A1471&amp;f%5B2%5D=story_type_news_story%3A1943&amp;f%5B3%5D=story_type_news_story%3A4164" title="Press releases, press briefings, media advisories, and statements" data-drupal-link-query="{&quot;f&quot;:[&quot;story_type_news_story:1460&quot;,&quot;story_type_news_story:1471&quot;,&quot;story_type_news_story:1943&quot;,&quot;story_type_news_story:4164&quot;]}" data-drupal-link-system-path="news-stories">Press materials</a>
+              </li>
+          <li>
+        <a href="/en/news/media-contacts" data-drupal-link-system-path="node/24254">Media contacts</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_3">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--9" class="block block-quick-node-block block-quick-node-block--9">
+          
+            
+
+      <article data-history-node-id="70351" role="article" about="/en/news/stories/2021/10/experts-take-gender-equality-is-critical-for-the-afghanistans-future" class="node node--type-story node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/news/stories/2021/10/experts-take-gender-equality-is-critical-for-the-afghanistans-future" rel="bookmark" aria-label="Expert’s take: Gender equality is critical for Afghanistan’s future, long-term development, and sustained peace" title="Expert’s take: Gender equality is critical for Afghanistan’s future, long-term development, and sustained peace">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/Headquarters/Images/Sections/News/Stories/2021/10/AlisonDavidian_IMG_2696_960x640.jpg?t=1642408411" alt="Alison Davidian, Deputy Representative for UN Women in Afghanistan. Photo: UN Women" title="AlisonDavidian_IMG_2696_960x640.jpg" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        Expert’s take: Gender equality is critical for Afghanistan’s future, long-term development, and sustained peace
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_4">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--10" class="block block-quick-node-block block-quick-node-block--10">
+          
+            
+
+      <article data-history-node-id="70349" role="article" about="/en/news/stories/2021/10/feature-addressing-the-digital-gender-divide-in-africa" class="node node--type-story node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/news/stories/2021/10/feature-addressing-the-digital-gender-divide-in-africa" rel="bookmark" aria-label="Addressing the digital gender divide in Africa through the African Girls Can Code Initiative" title="Addressing the digital gender divide in Africa through the African Girls Can Code Initiative">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/African-Girls-Can-Code-Initiative-participants-collage-600x400.jpg?t=1642408405" width="600" height="400" alt="Participantes à l’initiative « Les jeunes Africaines savent coder » : Mariam Saïd Muhammed, Tanzanie ; Yordanos Genanaw, Éthiopie ; Thereza Joseph John, Tanzanie. Photos gracieuseté des participantes." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        Addressing the digital gender divide in Africa through the African Girls Can Code Initiative
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+          <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:4b48736b-16a5-4dc0-908c-e61ce6d5d27d" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="Digital library" aria-level="1" >
+  <a href='/en/resources'  class="dropdown-toggle" title="Digital library" aria-expanded="false">
+        Digital library
+          </a>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="resources_resources">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockresources-resources--2-menu" id="block-menu-blockresources-resources--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockresources-resources--2-menu">Resources - Resources</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Resources</span>
+                                <ul>
+              <li>
+        <a href="/en/resources" title="Publications" data-drupal-link-system-path="resources">Publications</a>
+              </li>
+          <li>
+        <a href="/en/digital-library/annual-report" data-drupal-link-system-path="node/5226">Annual report</a>
+              </li>
+          <li>
+        <a href="/en/digital-library/progress-of-the-worlds-women" title="Progress of the world’s women" data-drupal-link-system-path="node/351924">Progress of the world’s women</a>
+              </li>
+          <li>
+        <a href="/en/digital-library/world-survey-on-the-role-of-women-in-development" title="World survey on the role of women in development" data-drupal-link-system-path="node/322460">World survey on the role of women in development</a>
+              </li>
+          <li>
+        <a href="/en/resources/gender-snapshot" title="Progress on the Sustainable Development Goals: The Gender Snapshot" data-drupal-link-system-path="node/476303">The gender snapshot</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="resources_column_2">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockresources-column-2--2-menu" id="block-menu-blockresources-column-2--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockresources-column-2--2-menu">Resources - Column 2</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/en/digital-library/genderterm" title="GenderTerm: UN Women online resources on the use of gender-inclusive language" data-drupal-link-system-path="node/63">GenderTerm</a>
+              </li>
+          <li>
+        <a href="/en/digital-library/reprint-permissions" data-drupal-link-system-path="node/5228">Reprint permissions</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_5">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--11" class="block block-quick-node-block block-quick-node-block--11">
+          
+            
+
+      <article data-history-node-id="5226" role="article" about="/en/digital-library/annual-report" typeof="schema:Article" class="node node--type-article node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/digital-library/annual-report" rel="bookmark" aria-label="Annual report" title="Annual report">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2024-09/un-women-highlights-2023-2024-cover-image-en.jpg?t=1727463652" width="1200" height="616" alt="UN Women Highlights 2023–2024" loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        Annual report
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+      <div  data-showblocktitle="0" class="tb-megamenu-column span3 mega-col-nav" data-class="" data-width="3" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="quicknodeblock_6">
+    <div class="block-inner">
+      
+  <section id="block-quick-node-block--12" class="block block-quick-node-block block-quick-node-block--12">
+          
+            
+
+      <article data-history-node-id="476303" role="article" about="/en/resources/gender-snapshot" class="node node--type-hq-complex-page node--view-mode-menu-highlight">
+      <div>
+      <a href="/en/resources/gender-snapshot" rel="bookmark" aria-label="Progress on the Sustainable Development Goals: The Gender Snapshot 2024" title="Progress on the Sustainable Development Goals: The Gender Snapshot 2024">
+        
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2024-09/gender-snapshot-landing-page-thumbnail.jpg?t=1726651389" width="1200" height="800" alt="Cover of UN Women&#039;s Gender Snapshot report 2024" loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+        Progress on the Sustainable Development Goals: The Gender Snapshot 2024
+      </a>
+    </div>
+  </article>
+
+      </section>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+          <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:f0c2d7c3-0b44-49a2-abf1-b5e1e6c6fdeb" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="Get involved" aria-level="1" >
+  <a href='/en/get-involved'  class="dropdown-toggle" title="Get involved" aria-expanded="false">
+        Get involved
+          </a>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  data-showblocktitle="0" class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="" id="tb-megamenu-column-17">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                 <div  class="tb-block tb-megamenu-block" data-type="block" data-block="get_involved_how_to_get_involved">
+    <div class="block-inner">
+      <nav role="navigation" aria-labelledby="block-menu-blockget-involved-how-to-get-involv--2-menu" id="block-menu-blockget-involved-how-to-get-involv--2">
+            
+  <h2 class="visually-hidden" id="block-menu-blockget-involved-how-to-get-involv--2-menu">Get involved - How to get involved</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/en/get-involved" title="How to get involved" data-drupal-link-system-path="node/394223">How to get involved</a>
+                                <ul>
+              <li>
+        <a href="/en/get-involved/for-all-women-and-girls" title="For ALL Women and Girls: Rights, Equality, Empowerment" data-drupal-link-system-path="node/511078">For ALL Women and Girls</a>
+              </li>
+          <li>
+        <a href="/en/get-involved/international-womens-day" title="International Women’s Day" data-drupal-link-system-path="node/393187">International Women’s Day</a>
+              </li>
+          <li>
+        <a href="/en/get-involved/16-days-of-activism" title="16 Days of Activism against Gender-based Violence" data-drupal-link-system-path="node/493268">16 Days of Activism against Gender-based Violence</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do/ending-violence-against-women/unite" data-drupal-link-system-path="node/180540">UNiTE! Campaign to End Violence against Women</a>
+              </li>
+          <li>
+        <a href="/en/get-involved/generation-equality-initiative" target="_self" data-drupal-link-system-path="node/469976">Generation Equality</a>
+              </li>
+          <li>
+        <a href="https://www.heforshe.org/" target="_blank">He for She</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+  </ul>
+
+      </div>
+  </div>
+
+      </section>
+
+<div class="search ">
+  <div class="search-input-wrapper">
+        <form action="/en/search-results" method="get" id="views-exposed-form-search-content-page-1" accept-charset="UTF-8">
+  
+<div class="search-input-wrapper">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext">
+      
+        
+<input placeholder="Search..." data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text form-control" />
+
+        </div>
+
+  </div>
+
+</form>
+
+    <button id="header-search-close" class="icon icon-close"><span class="sr-only">close search</span></button>
+  </div>
+  <button id="header-search" class="icon icon-search" aria-label="open search input">
+    <span class="sr-only">Open Search</span>
+  </button>
+  <button id="form-active-submit" type="submit" class="tablet icon icon-search" aria-label="search input">
+    <span class="sr-only">Search</span>
+  </button>
+</div>
+
+  <section id="block-donateheader" class="block--type-basic block block-block-content block-donateheader">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p class="mb-0"><a class="btn btn-primary text-decoration-none" href="https://donate.unwomen.org/en/donate-to-international-womens-day?utm_source=unwomen.org&utm_medium=cta-header&utm_campaign=international-womens-day&utm_content=donate-button&utm_term=fix-header">Donate</a></p>
+</div>
+      
+      </section>
+
+  </div>
+  <button id="toggle-menu" class="icon icon-menu">
+    <span class="sr-only">Open Menu</span>
+  </button>
+
+  </div>
+
+  </header>
+
+
+
+
+<main role="main">
+
+    <a id="main-content" tabindex="-1"></a>
+
+  <div class="layout-content">
+    
+
+  <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  <section id="block-hq-content" class="block block-system block-hq-content">
+          
+            
+
+      <article data-history-node-id="1100" role="article" about="/en/homepage" class="node node--type-basic-page node--view-mode-full">
+      
+        
+        <div>
+      
+<div class="paragraph-list">
+      
+
+    
+    <section id="147" class="paragraph--section--hero" >
+      
+  <div  class="paragraph paragraph--type--hero paragraph--view-mode--default">
+    <div class="hero-parallax" style="background-image: url('/sites/default/files/2021-11/HQ-homepage-hero-Cameroon-1920x800_3.jpeg')"></div>
+    <div class="container">
+              
+            <div class="field field--name-field-title-html field--type-text field--label-hidden field__item">We are the global champion for <em>gender equality.</em></div>
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>UN Women is the UN organization delivering programmes, policies and standards that uphold women’s human rights and ensure that every woman and girl lives up to her full potential.</p>
+</div>
+      
+  <a  class="field btn btn-primary field--name-field-link-limited field--type-link field--label-hidden field__item" href="/en/about-us/about-un-women" title="Open Learn More" aria-label="Open page Learn More">
+    Learn More
+  </a>
+
+          </div>
+  </div>
+
+    </section>
+      
+
+    
+    <section id="94619" class="paragraph--section--card-featured"  data-title="true" >
+      
+  <article  class="paragraph container paragraph--type--card-featured paragraph--view-mode--default">
+    
+              <div class="cardHighlights-header">
+                      <h2>Highlights</h2>
+                    
+                      <div class="more-link">
+              <a href="https://www.unwomen.org/en/news-stories"
+                  aria-label="Go to See more"
+                  title="Go to See more">
+                  See more
+              </a>
+            </div>
+                  </div>
+      
+      <div class="content">
+        <div class="content-image">
+                                    <a href="https://www.unwomen.org/en/get-involved/for-all-women-and-girls" 
+                 title="Linked image to the featured post" 
+                 aria-label="Open featured post">
+
+                <img src="/sites/default/files/2025-01/hero-fawg-banner.jpg" alt="Featured post - image" />
+              </a>
+                              </div>
+        <div class="content-right">
+                                                    <h3>
+                                                        
+              <a class="link" href="https://www.unwomen.org/en/get-involved/for-all-women-and-girls" 
+                 title="Link to the featured post" 
+                 aria-label="Open featured post">
+                For ALL Women and Girls
+              </a>
+                      </h3>
+
+          
+  <ul class="field field--name-field-link field--type-link field--label-hidden field__items">
+          <li class="field__item">
+        <a href="/en/articles/timeline/never-backing-down-women-march-forward-for-equal-rights" aria-label="Open Timeline: Women march forward for women&#039;s rights" title="Timeline: Women march forward for women&#039;s rights">
+          Timeline: Women march forward for women&#039;s rights
+        </a>
+      </li>
+          <li class="field__item">
+        <a href="/en/articles/explainer/actions-to-accelerate-gender-equality-for-all-women-and-girls" aria-label="Open Actions to accelerate gender equality for ALL women and girls" title="Actions to accelerate gender equality for ALL women and girls">
+          Actions to accelerate gender equality for ALL women and girls
+        </a>
+      </li>
+          <li class="field__item">
+        <a href="/en/articles/explainer/make-2025-count-for-feminism-what-you-can-do-right-now" aria-label="Open Make 2025 count for feminism: What you can do right now" title="Make 2025 count for feminism: What you can do right now">
+          Make 2025 count for feminism: What you can do right now
+        </a>
+      </li>
+      </ul>
+
+        </div>
+      </div>
+      </article>
+
+    </section>
+      
+
+    
+    <section id="81119" class="paragraph--section--three-cards"  data-title="true" >
+      
+  <div class="paragraph paragraph--type--three-cards paragraph--view-mode--default">
+          <div class="container">
+
+                
+        <ul class="row">
+          
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="539341" role="article" about="/en/articles/in-focus/two-years-of-war-in-sudan-the-worlds-worst-humanitarian-crisis-for-women-and-girls" class="node node--type-hq-article node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-04/sudan_displacement_unicefphoto_uni569483_1200x800_1.jpg?itok=IJNidLBz" width="700" height="460" alt="Nassim, 28 years and a mother of five children at the Tambasi centre for displaced families in El Fasher, North Darfur. Photo: UNICEF/UNI569483/Mohamed Zakaria" loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+        
+            <div class="field field--name-field-story-type field--type-entity-reference field--label-hidden field__item">In focus</div>
+      
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>Two years of war in Sudan: The world’s worst humanitarian crisis for women and girls</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-04-15T12:00:00Z">15 April 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/articles/in-focus/two-years-of-war-in-sudan-the-worlds-worst-humanitarian-crisis-for-women-and-girls" class="link-full-content" aria-label="Two years of war in Sudan: The world’s worst humanitarian crisis for women and girls" title="Two years of war in Sudan: The world’s worst humanitarian crisis for women and girls">
+    <span class="sr-only">Two years of war in Sudan: The world’s worst humanitarian crisis for women and girls</span>
+  </a>
+</article></li>
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="539289" role="article" about="/en/articles/explainer/the-impact-of-sudans-war-on-women-two-years-on" class="node node--type-hq-article node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-04/sudan_twoyearscrisisimpactonwomenandgirls_unicefphoto_uni689368_1_1.jpg?itok=btgV-Lqz" width="700" height="460" alt="Malka, a displaced mother, carries her 1-year-old daughter Sahar who is suffering severe acute malnutrition outside her house in Elhoury gathering point for internally displaced persons in Gedaref state, November, 2024. Photo: UNICEF/UNI689368/Ahmed Mohamdeen Elfatih." loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+        
+            <div class="field field--name-field-story-type field--type-entity-reference field--label-hidden field__item">Explainer</div>
+      
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>The impact of Sudan’s war on women, two years on</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-04-15T12:00:00Z">15 April 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/articles/explainer/the-impact-of-sudans-war-on-women-two-years-on" class="link-full-content" aria-label="The impact of Sudan’s war on women, two years on" title="The impact of Sudan’s war on women, two years on">
+    <span class="sr-only">The impact of Sudan’s war on women, two years on</span>
+  </a>
+</article></li>
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="537837" role="article" about="/en/articles/explainer/myanmar-earthquake-2025-what-it-means-for-women-and-girls" class="node node--type-hq-article node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-04/myanmar_crisis_earthquake2025_unicefphoto_uni771892_1200x800.jpg?itok=PkvzsWKD" width="700" height="460" alt="On 31 March 2025, two women are seen riding a motorcycle, passing by a collapsed building in Sagaing, Myanmar, following the 7.7-magnitude earthquake that struck Mandalay on 28 March. Photo: UNICEF/UNI771892/Htet" loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+        
+            <div class="field field--name-field-story-type field--type-entity-reference field--label-hidden field__item">Explainer</div>
+      
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>Myanmar Earthquake 2025: What it means for women and girls</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-04-03T12:00:00Z">3 April 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/articles/explainer/myanmar-earthquake-2025-what-it-means-for-women-and-girls" class="link-full-content" aria-label="Myanmar Earthquake 2025: What it means for women and girls" title="Myanmar Earthquake 2025: What it means for women and girls">
+    <span class="sr-only">Myanmar Earthquake 2025: What it means for women and girls</span>
+  </a>
+</article></li>
+
+        </ul>
+
+              </div>
+      </div>
+
+    </section>
+      
+
+    
+    <section id="86118" class="paragraph--section--three-cards"  data-title="true" >
+      
+  <div class="paragraph paragraph--type--three-cards paragraph--view-mode--default">
+          <div class="container">
+
+                
+        <ul class="row">
+          
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="539685" role="article" about="/en/news-stories/press-release/2025/04/two-years-of-relentless-conflict-in-sudan-have-triggered-the-worlds-worst-humanitarian-crisis-for-6-million-displaced-women-and-girls" class="node node--type-news-and-stories node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-04/sudan_humanitarian_weriseeconomicempoerment_1_1200x800_1.jpg?itok=xwTULRSI" width="700" height="460" alt="As part of the EU-funded project WE-RISE, led by UN Women and the Italian Agency for Development Cooperation, Women in Eastern Sudan received farm inputs, training on value chain transformation, marketing, women’s rights, violence against women, and education. October 2024. Photo: UN Women / Muna Elsadaty" loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+          Press release
+
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>Two years of relentless conflict in Sudan have triggered the world’s worst humanitarian crisis for 6 million displaced women and girls</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-04-10T12:00:00Z">10 April 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/news-stories/press-release/2025/04/two-years-of-relentless-conflict-in-sudan-have-triggered-the-worlds-worst-humanitarian-crisis-for-6-million-displaced-women-and-girls" class="link-full-content" aria-label="Two years of relentless conflict in Sudan have triggered the world’s worst humanitarian crisis for 6 million displaced women and girls" title="Two years of relentless conflict in Sudan have triggered the world’s worst humanitarian crisis for 6 million displaced women and girls">
+    <span class="sr-only">Two years of relentless conflict in Sudan have triggered the world’s worst humanitarian crisis for 6 million displaced women and girls</span>
+  </a>
+</article></li>
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="537839" role="article" about="/en/news-stories/interview/2025/04/for-all-women-and-girls-pendo-vestine-on-closing-the-gender-gap-for-girls-in-tech" class="node node--type-news-and-stories node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-04/rwanda_pendovestine_speaking_1200x800.jpg?itok=8TDKAAzt" width="700" height="460" alt="Pendo Vestine speaks at a forum in Kigali about her coding work and experience in the African Girls Can Code Initiative (AGCCI). Photo: UN Women" loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+          Interview
+
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>For All Women and Girls: Pendo Vestine on closing the gender gap for girls in tech</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-04-03T12:00:00Z">3 April 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/news-stories/interview/2025/04/for-all-women-and-girls-pendo-vestine-on-closing-the-gender-gap-for-girls-in-tech" class="link-full-content" aria-label="For All Women and Girls: Pendo Vestine on closing the gender gap for girls in tech" title="For All Women and Girls: Pendo Vestine on closing the gender gap for girls in tech">
+    <span class="sr-only">For All Women and Girls: Pendo Vestine on closing the gender gap for girls in tech</span>
+  </a>
+</article></li>
+  <li class="field field--name-field-content-reference-three field--type-entity-reference field--label-hidden col-12 col-md-4 field__item">
+<article  data-history-node-id="525120" role="article" about="/en/articles/explainer/make-2025-count-for-feminism-what-you-can-do-right-now" class="node node--type-hq-article node--view-mode-teaser no-video">
+  <header class="head-wrapper">
+    <div class="image-wrapper">
+              
+            <div class="field field--name-field-media-image field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/styles/card_teaser/public/2025-02/iwd-action-explainer-thumbnail.jpg?itok=bVbkPqhv" width="700" height="460" alt="Indonesia, women participate in discussions held at Pesantren Annuqqayah—one of the oldest Islamic boarding schools in the country—on how women contribute to peace in their communities." loading="lazy" typeof="foaf:Image" />
+
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+          </div>
+          <div class="card_tag">
+        
+            <div class="field field--name-field-story-type field--type-entity-reference field--label-hidden field__item">Explainer</div>
+      
+      </div>
+      </header>
+
+  <div  class="card_wrapper">
+    
+    <h3 class="card_title">
+      <span>Make 2025 count for feminism: What you can do right now</span>
+
+    </h3>
+    
+
+    
+    
+            <div class="field field--name-field-story-publication-date field--type-datetime field--label-hidden field__item"><time datetime="2025-02-25T12:00:00Z">25 February 2025</time>
+</div>
+      
+  </div>
+
+  <a href="/en/articles/explainer/make-2025-count-for-feminism-what-you-can-do-right-now" class="link-full-content" aria-label="Make 2025 count for feminism: What you can do right now" title="Make 2025 count for feminism: What you can do right now">
+    <span class="sr-only">Make 2025 count for feminism: What you can do right now</span>
+  </a>
+</article></li>
+
+        </ul>
+
+                  <div class="cardHighlights-header mobile">
+            <div class="more-link">
+              <a href="https://www.unwomen.org/en/news-stories" 
+                aria-label="Go to See more" 
+                title="Go to See more">
+                See more
+              </a>
+            </div>
+          </div>
+              </div>
+      </div>
+
+    </section>
+      
+
+    
+    <section id="94276" class="paragraph--section--iframe" >
+      
+  <div class="paragraph paragraph--type--iframe paragraph--view-mode--default">
+          <div class="container-fluid">
+                  <div class="row justify-content-center video-iframe">
+                          <div class="col-12 col-md-8">
+                <div class="container-iframe">
+                  
+            <div class="field field--name-field-video field--type-video-embed-field field--label-hidden field__item"><div class="video-embed-field-provider-youtube video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/1DVCzMUqI4E?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+</div>
+      
+                </div>
+              </div>
+                      </div>
+        
+                  <div class="row justify-content-center video-iframe">
+                          <div class="col-12 col-md-8">
+                
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+      
+              </div>
+                      </div>
+        
+      </div>
+      </div>
+
+    </section>
+      
+
+    
+    <section id="6777" class="paragraph--section--cta-carousel"  data-title="true" >
+      
+  <div  class="paragraph container cardCarousel_container paragraph--type--cta-carousel paragraph--view-mode--default">
+          <div class="swiperHeader-wrapper">
+          <h2 class="swiperHeader_title">
+    We focus on issues that unlock progress on gender equality.
+  </h2>
+
+        <nav class="carouselNav-wrapper">
+          <button class="swiper-button-prev btn btn-primary icon icon-arrow-left"><span class="sr-only">swipe left</span></button>
+          <button class="swiper-button-next btn btn-primary icon icon-arrow-right"><span class="sr-only">swipe right</span></button>
+        </nav>
+      </div>
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+              <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Leadership-and-political-participation-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Leadership and political participation. Photo: UN Women/Assane Gueye." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Leadership and political participation</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/leadership-and-political-participation" 
+     aria-label="Go to Leadership and political participation"
+     title="Leadership and political participation">
+    <span class="sr-only">Leadership and political participation</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Economic-empowerment-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Economic empowerment. Photo: UN Women/Joe Saad." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Economic empowerment</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/economic-empowerment" 
+     aria-label="Go to Economic empowerment"
+     title="Economic empowerment">
+    <span class="sr-only">Economic empowerment</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Ending-violence-against-women-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Ending violence against women. Photo: UN Women/Norman Gorecho." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Ending violence against women</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/ending-violence-against-women" 
+     aria-label="Go to Ending violence against women"
+     title="Ending violence against women">
+    <span class="sr-only">Ending violence against women</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Peace-and-security-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Peace and security. Photo: UN Women/Christopher Herwig." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Peace and security</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/peace-and-security" 
+     aria-label="Go to Peace and security"
+     title="Peace and security">
+    <span class="sr-only">Peace and security</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Humanitarian-action-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Humanitarian action. Photo: UN Women/Ryan Brown." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Humanitarian action</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/humanitarian-action" 
+     aria-label="Go to Humanitarian action"
+     title="Humanitarian action">
+    <span class="sr-only">Humanitarian action</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Governance-and-national-planning-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Governance and national planning. Photo: UN Women/Fatma Elzahraa Yassin." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Governance and national planning</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/governance-and-national-planning" 
+     aria-label="Go to Governance and national planning"
+     title="Governance and national planning">
+    <span class="sr-only">Governance and national planning</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Youth-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Youth. Photo: UN Women/Urjasi Rudra." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Youth</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/youth" 
+     aria-label="Go to Youth and gender equality"
+     title="Youth and gender equality">
+    <span class="sr-only">Youth and gender equality</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Women-and-girls-with-disabilities-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Women and girls with disabiities. Photo: Samar Abu Al-ouf." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Women and girls with disabilities</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/women-and-girls-with-disabilities" 
+     aria-label="Go to Women and girls with disabilities"
+     title="Women and girls with disabilities">
+    <span class="sr-only">Women and girls with disabilities</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-Sustainable-development-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: Sustainable development. Photo: UN Women/Joe Saad." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>Sustainable development</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/the-2030-agenda-for-sustainable-development" 
+     aria-label="Go to Sustainable development"
+     title="Sustainable development">
+    <span class="sr-only">Sustainable development</span>
+  </a>
+
+      </li>
+
+    <li  class="paragraph swiper-slide paragraph--type--cta-carousel-item paragraph--view-mode--default">
+          
+
+<figure class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden">
+      <article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2021-11/What-we-do-HIV-and-AIDS-550x812.jpg?t=1642408405" width="550" height="812" alt="What we do: HIV and AIDS. Photo: UN Women." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+
+  </figure>
+<div class="card_wrapper">
+  <h3 class="card_title">
+                  <span>HIV and AIDS</span>
+            </h3>
+</div>
+  <a class="link-full-content" href="/en/what-we-do/hiv-and-aids" 
+     aria-label="Go to HIV and AIDS"
+     title="HIV and AIDS">
+    <span class="sr-only">HIV and AIDS</span>
+  </a>
+
+      </li>
+
+
+        </ul>
+      </div>
+      </div>
+
+    </section>
+      
+
+    
+    <section id="6781" class="paragraph--section--data-highlight"  data-title="true" >
+        <div  class="paragraph paragraph--type--data-highlight paragraph--view-mode--default">
+    <div class="main-content">
+      <div class="container">
+                    <h2 class="section-title">
+    Our impact in numbers
+  </h2>
+
+<ul class="field field--name-field-component field--type-entity-reference-revisions field--label-hidden field__items">
+      <li class="field__item">
+  <article class="paragraph paragraph--type--data-highlight-item paragraph--view-mode--default">
+            <h2 class="item-title">
+    571,000
+  </h2>
+
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>women and girls received lifesaving humanitarian support.</p>
+</div>
+      
+      </article>
+</li>
+      <li class="field__item">
+  <article class="paragraph paragraph--type--data-highlight-item paragraph--view-mode--default">
+            <h2 class="item-title">
+    101,000
+  </h2>
+
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>women’s organizations supported to mitigate the impact of COVID-19.</p>
+</div>
+      
+      </article>
+</li>
+      <li class="field__item">
+  <article class="paragraph paragraph--type--data-highlight-item paragraph--view-mode--default">
+            <h2 class="item-title">
+    98,700
+  </h2>
+
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>gender-based violence survivors accessed justice and recovery services.</p>
+</div>
+      
+      </article>
+</li>
+  </ul>
+
+              </div>
+    </div>
+  </div>
+
+    </section>
+      
+
+    
+    <section id="6783" class="paragraph--section--basic-cta" >
+        
+
+  <article  class="paragraph paragraph--type--basic-cta paragraph--view-mode--default">
+          <div class="container">
+                  <div class="row align-items-center d-flex">
+            <div class="offset-lg-1 col-12 col-md-6 col-lg-5">
+                <h2>
+    Please donate today to protect and support women and their families in the Gaza crisis
+  </h2>
+
+              <div class="body">
+                
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><p>UN Women has been supporting Palestinian women since 1997 to achieve their social, economic, and political rights. We remain present on the ground to provide support and assistance and will do so for as long as it takes.</p>
+</div>
+      
+  <a  class="btn btn-primary" 
+     href="https://donate.unwomen.org/en/stand-women-gaza-donate-now?utm_source=unwomen.org&amp;utm_medium=cta-banner-home&amp;utm_campaign=emergency-gaza&amp;utm_content=donate-button&amp;utm_term=cta-banner-home" 
+     aria-label="Go to Donate" 
+     title="Donate">
+      Donate
+  </a>
+
+              </div>
+            </div>
+            <div class="col-12 col-md-6 image-wrapper">
+              <figure class="image">
+                <a class="image-link" href="https://donate.unwomen.org/en/stand-women-gaza-donate-now?utm_source=unwomen.org&amp;utm_medium=cta-banner-home&amp;utm_campaign=emergency-gaza&amp;utm_content=donate-button&amp;utm_term=cta-banner-home" aria-label="Go toPlease donate today to protect and support women and their families in the Gaza crisispage" title="Link toPlease donate today to protect and support women and their families in the Gaza crisispage">
+                  
+            <div class="field field--name-field-image-limited-media field--type-entity-reference field--label-hidden field__item"><article>
+      
+  <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field__label visually-hidden">Image</div>
+              <div class="field__item">
+  <div class="image-container">
+    <img src="/sites/default/files/2023-10/uni453263_1200x800.jpg?t=1698076041" width="1200" height="800" alt="Families flee their shattered homes in Tal al-Hawa neighbourhood in Gaza city. Photo: UNICEF/Eyad El Baba." loading="lazy" typeof="foaf:Image" />
+
+  </div>
+</div>
+          </div>
+
+  </article>
+</div>
+      
+                </a>
+              </figure>
+            </div>
+          </div>
+              </div>
+      </article>
+
+    </section>
+      
+
+    
+    <section id="74087" class="paragraph--section--basic-text-image" >
+      
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 offset-0 col-md-8 offset-md-2">
+        <div class="paragraph paragraph--type--basic-text-image paragraph--view-mode--default">
+                      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field__item"><script async src="https://www.googletagmanager.com/gtag/js?id=AW-653747878"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-653747878');
+</script>
+<script>
+  window.addEventListener('load', function() {
+    jQuery('.btn.btn-primary.text-decoration-none').click(function() {
+     gtag('event', 'conversion', {'send_to': 'AW-653747878/TzpUCMy-7sMDEKbN3bcC'});
+    })
+  });
+</script>
+</div>
+      
+                  </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+  </div>
+
+    </div>
+  </article>
+
+      </section>
+
+  </div>
+
+  </div>
+
+    <button class="btn btn-secondary icon icon-arrow-left scroll-top" aria-label="Scroll to top" role="button">
+    <span class="sr-only">Scroll to top</span>
+  </button>
+
+    <div class="main-overlay"></div>
+</main>
+
+
+
+  <footer class="page__footer">
+    <div class="container">
+              <div class="row">
+                      <div class="footer-top-left col-12 col-lg-7">
+              
+
+  <div class="region region-footer-top-left">
+    <nav role="navigation" aria-labelledby="block-footer-menu-1-menu" id="block-footer-menu-1">
+            
+  <h2 class="visually-hidden" id="block-footer-menu-1-menu">Footer Menu 1</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/en/node/37622" data-drupal-link-system-path="node/37622">News and stories</a>
+              </li>
+          <li>
+        <a href="/en/resources" title="Resources" data-drupal-link-system-path="resources">Resources</a>
+              </li>
+          <li>
+        <a href="/en/what-we-do" data-drupal-link-system-path="node/24177">What we do</a>
+              </li>
+          <li>
+        <a href="/en/where-we-are" title="Where we are" data-drupal-link-system-path="node/48">Where we are</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footer-menu-2-menu" id="block-footer-menu-2">
+            
+  <h2 class="visually-hidden" id="block-footer-menu-2-menu">Footer Menu 2</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/en/partnerships" data-drupal-link-system-path="node/20744">Partnerships</a>
+              </li>
+          <li>
+        <a href="/en/about-us/employment" title="Employment" data-drupal-link-system-path="node/40425">Employment</a>
+              </li>
+          <li>
+        <a href="/en/about-us/procurement" data-drupal-link-system-path="node/40424">Procurement</a>
+              </li>
+          <li>
+        <a href="/en/about-us/contact-us" title="Contact us" data-drupal-link-system-path="node/5028">Contact us</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footer-menu-3-menu" id="block-footer-menu-3">
+            
+  <h2 class="visually-hidden" id="block-footer-menu-3-menu">Footer Menu 3</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/en/executive-board" data-drupal-link-system-path="node/5230">Executive Board</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+          
+                      <div class="footer-top-right col-12 col-md-5">
+              
+
+  <div class="region region-footer-top-right">
+    
+  <section id="block-donatefootertablet" class="d-flex d-lg-none block--type-basic block block-block-content block-donatefootertablet">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="btn btn-primary text-white" href="https://donate.unwomen.org/en" type="button">Donate</a></p>
+</div>
+      
+      </section>
+
+  <section class="views-exposed-form bef-exposed-form d-none d-lg-flex search-block-form block block-views block-searchform" data-drupal-selector="views-exposed-form-search-content-page-1" id="block-searchform">
+          
+            
+
+      <form action="/en/search-results" method="get" id="views-exposed-form-search-content-page-1" accept-charset="UTF-8">
+  
+<div class="search-input-wrapper">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext">
+      
+        
+<input placeholder="Search..." data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext--2" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text form-control" />
+
+        </div>
+
+  </div>
+
+</form>
+
+      </section>
+
+  </div>
+
+            </div>
+                  </div>
+      
+              <div class="row mt-20 mt-lg-0">
+          <div class="col-12">
+            <div class="footer-mobile">
+              
+
+  <div class="region region-footer-mobile">
+    
+  <section class="views-exposed-form bef-exposed-form d-flex d-lg-none search-block-form block block-views block-searchform-2" data-drupal-selector="views-exposed-form-search-content-page-1" id="block-searchform-2">
+          
+            
+
+      <form action="/en/search-results" method="get" id="views-exposed-form-search-content-page-1" accept-charset="UTF-8">
+  
+<div class="search-input-wrapper">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext">
+      
+        
+<input placeholder="Search..." data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext--3" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text form-control" />
+
+        </div>
+
+  </div>
+
+</form>
+
+      </section>
+
+  </div>
+
+            </div>
+          </div>
+        </div>
+            
+              <div class="row mt-50 mt-lg-85">
+          <div class="col-12">
+            <div class="footer-middle">
+              
+
+  <div class="region region-footer-middle">
+    
+  <section id="block-donatefooter" class="btn-donate d-none d-lg-flex block--type-basic block block-block-content block-donatefooter">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="btn btn-primary btn__text text-white" href="https://donate.unwomen.org/en/donate-to-international-womens-day?utm_source=unwomen.org&utm_medium=cta-footer&utm_campaign=international-womens-day&utm_content=donate-button&utm_term=fix-footer" type="button">Donate</a></p>
+</div>
+      
+      </section>
+
+  <section id="block-socialfooter" class="block--type-basic block block-block-content block-socialfooter">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><ul>
+	<li><a aria-label="Follow us on Facebook" href="https://www.facebook.com/unwomen" target="_blank" title="Follow us on Facebook"><i class="icon-facebook"><span class="d-none">Follow us on Facebook</span></i></a></li>
+	<li><a aria-label="Follow us on Twitter" href="https://www.twitter.com/UN_Women" target="_blank" title="Follow us on Twitter"><i class="icon-twitter"><span class="d-none">Follow us on Twitter</span></i></a></li>
+	<li><a aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/un-women" target="_blank" title="Follow us on LinkedIn"><i class="icon-linkedin"><span class="d-none">Follow us on LinkedIn</span></i></a></li>
+	<li><a aria-label="Follow us on Flickr" href="https://www.flickr.com/photos/unwomen" target="_blank" title="Follow us on Flickr"><i class="icon-flickr"><span class="d-none">Follow us on Flickr</span></i></a></li>
+	<li><a aria-label="Follow us on Snapchat" href="https://www.snapchat.com/add/unwomen" target="_blank" title="Follow us on snapchat"><i class="icon-snapchat"><span class="d-none">Follow us on Snapchat</span></i></a></li>
+	<li><a aria-label="Follow us on YouTube" href="https://www.youtube.com/UNWomen" target="_blank" title="Follow us on YouTube"><i class="icon-youtube"><span class="d-none">Follow us on YouTube</span></i></a></li>
+	<li><a aria-label="Follow us on Instagram" href="https://www.instagram.com/unwomen" target="_blank" title="Follow us on Instagram"><i class="icon-insta"><span class="d-none">Follow us on Instagram</span></i></a></li>
+</ul>
+</div>
+      
+      </section>
+
+  <section id="block-logofooter" class="footer-logo block--type-basic block block-block-content block-logofooter">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a aria-label="Go to UN Women Homepage" href="/" title="UN Women Homepage"><img alt="UN Women" src="/themes/custom/hq/img/UNWHQ-Logo-Footer.png" title="UN Women" /></a></p>
+</div>
+      
+      </section>
+
+  </div>
+
+            </div>
+          </div>
+        </div>
+      
+              <div class="footer-bottom">
+          <nav role="navigation" aria-labelledby="block-footerbottom-menu" id="block-footerbottom">
+            
+  <h2 class="visually-hidden" id="block-footerbottom-menu">Footer bottom [Menu]</h2>
+  
+
+          
+
+
+  <ul class="nav navbar-footer-bottom">
+                                                            <li class="nav-item  ">
+                      <a href="/en/information-security" class="nav-link" data-drupal-link-system-path="node/38789">Information security</a>
+                  </li>
+                                                        <li class="nav-item  ">
+                      <a href="/en/privacy-notice" class="nav-link" data-drupal-link-system-path="node/38405">Privacy Policy</a>
+                  </li>
+                                                        <li class="nav-item  ">
+                      <a href="/en/about-us/accountability/investigations" class="nav-link" data-drupal-link-system-path="node/39031">Report wrongdoing</a>
+                  </li>
+                                                        <li class="nav-item  ">
+                      <a href="/en/terms-of-use" class="nav-link" data-drupal-link-system-path="node/37807">Terms of Use</a>
+                  </li>
+            </ul>
+
+  </nav>
+
+  <section id="block-copyrighthq" class="block--type-basic block block-block-content block-copyrighthq">
+          
+            
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a aria-label="Go to UN Women Copyright page" href="/en/copyright" title="UN Women Copyright page">COPYRIGHT</a> © <a href="/en">UN WOMEN</a></p>
+</div>
+      
+      </section>
+
+
+        </div>
+          </div>
+  </footer>
+<div class="modal fade modal-social-sharing" id="shareitModal" tabindex="-1" role="dialog" aria-labelledby="shareitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shareitModalLabel">Share this page</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <i class="drupal-icon close-icon" tabindex="-1" focusable="false"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      
+        
+
+      
+    
+    
+<ul class="social-sharing-buttons social-media-links--platforms platforms list horizontal">
+    <!-- Facebook share button -->
+          <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.unwomen.org/en/homepage&title=Welcome" target="_blank" title="Share to Facebook" aria-label="Share to Facebook" class="social-sharing-buttons__button" rel="noopener">
+          <i class="icon-facebook"><span class="d-none">Share to Facebook</span></i>
+        </a>
+      </li>
+    
+    <!-- Twitter share button -->
+          <li>
+        <a href="https://twitter.com/intent/tweet?text=Welcome+https://www.unwomen.org/en/homepage" target="_blank" title="Share to Twitter" aria-label="Share to Twitter" class="social-sharing-buttons__button" rel="noopener">
+          <i class="icon-twitter"><span class="d-none">Share to Twitter</span></i>
+        </a>
+      </li>
+    
+    <!-- WhatsApp share button -->
+    
+    <!-- Facebook Messenger share button -->
+    
+    <!-- Pinterest share button -->
+    
+    <!-- Linkedin share button -->
+          <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.unwomen.org/en/homepage&title=Welcome&source=https://www.unwomen.org" target="_blank" title="Share to Linkedin" aria-label="Share to Linkedin" class="social-sharing-buttons__button" rel="noopener">
+          <i class="icon-linkedin"><span class="d-none">Share to LinkedIn</span></i>
+        </a>
+      </li>
+    
+    <!-- Digg share button -->
+    
+    <!-- StumbleUpon share button -->
+    
+    <!-- Slashdot share button -->
+    
+    <!-- Tumblr share button -->
+    
+    <!-- Reddit share button -->
+    
+    <!-- Evernote share button -->
+    
+    <!-- Email share button -->
+          <li>
+        <a href="mailto:?subject=Welcome&body=https://www.unwomen.org/en/homepage" title="Share to E-mail" aria-label="Share to E-mail" class="social-sharing-buttons__button" target="_blank" rel="noopener">
+          <i class="icon-email"><span class="d-none">Share to E-mail</span></i>
+        </a>
+      </li>
+    
+    <!-- Copy link share button -->
+    
+  <!-- Print share button -->
+  </ul>
+
+  
+        <div class="copy-link">
+          <p>Or copy link</p>
+          <label for="copyLinkInput" class="sr-only">Copy URL input box</label>
+          <input id="copyLinkInput" class="copy-link__input" type="text" value="https://www.unwomen.org/en/homepage" readonly>
+          <button type="button" class="copy-link__btn">
+            <i class="drupal-icon copy-icon" tabindex="-1" focusable="false"></i>
+            <span class="sr-only">URL copy button</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+     
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/1100","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"G-HJRPLCXTSW","trackOutbound":1,"trackMailto":1,"trackTel":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1"},"ajaxTrustedUrl":{"\/en\/search-results":true,"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"TBMegaMenu":{"TBElementsCounter":{"column":16},"theme":"hq"},"lang_dropdown":{"lang-dropdown-form":{"key":"lang-dropdown-form"}},"user":{"uid":0,"permissionsHash":"fde9036d32fe4411e5bb6634bc70e71b9535a0f9c1b635d5154e5ad71fac85ae"}}</script>
+<script src="/sites/default/files/js/js_moHf6OQRs3r_JKgMGiO5rnm-d78j4MkoLw4l-9lwoKQ.js"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_UMv2btZHquT9hWDMykD48UgugSs0fDmohyZNCJwMztE.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1453243f6d1a5d65c70","applicationID":"571621642","transactionName":"YgdRZxcAD0tSB0BQDFtNclARCA5WHCBGTBNUDm9dCgUEZHALWk0RWg5fVhc9L1dXAWJQBkIhXF0REw5UXwFGFF1DC1ZE","queueTime":0,"applicationTime":3787,"atts":"TkBSEV8aHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

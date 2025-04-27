@@ -1,0 +1,118 @@
+[
+  {
+    "url": "https://www.herkey.com/",
+    "type": "homepage",
+    "title": "HerKey - Empowering Women’s Careers",
+    "selectors": [".entry-content", ".main-content"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs",
+    "type": "jobs",
+    "title": "Browse All Jobs on HerKey",
+    "selectors": [".job-card", ".job-listing", ".filters"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs/search?keyword=engineer",
+    "type": "jobs",
+    "title": "Engineering Jobs on HerKey",
+    "selectors": [".job-card", ".job-title", ".location"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs/search?work_mode=remote&keyword=engineer",
+    "type": "remote",
+    "title": "Remote Engineering Jobs on HerKey",
+    "selectors": [".job-card", ".job-title", ".location"]
+  },
+  {
+    "url": "https://www.herkey.com/companies/jsw/5843",
+    "type": "company",
+    "title": "JSW – Opportunities for Women",
+    "selectors": [".company-overview", ".job-listing"]
+  },
+  {
+    "url": "https://www.herkey.com/companies/aximtechnologies/4037",
+    "type": "company",
+    "title": "Axim Technologies – Jobs for Engineers",
+    "selectors": [".company-overview", ".job-card"]
+  },
+  {
+    "url": "https://www.herkey.com/companies/inquizity/6370",
+    "type": "company",
+    "title": "Inquizity – Supply Chain and Tech Jobs",
+    "selectors": [".company-overview", ".job-listing"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs/search?location=pune&keyword=engineer",
+    "type": "location",
+    "title": "Engineering Jobs in Pune",
+    "selectors": [".job-card", ".job-title"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs/search?experience=0-2&keyword=engineer",
+    "type": "entry-level",
+    "title": "Fresher/Entry-Level Engineering Jobs",
+    "selectors": [".job-card", ".experience"]
+  },
+  {
+    "url": "https://www.herkey.com/jobs/search?work_mode=part_time&keyword=engineer",
+    "type": "part-time",
+    "title": "Part-Time Engineering Jobs for Women",
+    "selectors": [".job-card", ".job-title"]
+  },
+  
+    {
+      "url": "https://www.herkey.com/",
+      "type": "homepage",
+      "title": "HerKey - Empowering Women’s Careers",
+      "selectors": [".entry-content", ".main-content"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs",
+      "type": "jobs",
+      "title": "Browse All Jobs on HerKey",
+      "selectors": [".job-card", ".job-listing", ".filters"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?location=mumbai-%2F-navi-mumbai",
+      "type": "location",
+      "title": "Jobs in Mumbai / Navi Mumbai",
+      "selectors": [".job-card", ".job-title"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?location=bangalore-%2F-bengaluru",
+      "type": "location",
+      "title": "Jobs in Bangalore / Bengaluru",
+      "selectors": [".job-card", ".job-title"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?location=hyderabad-%2F-secunderabad",
+      "type": "location",
+      "title": "Jobs in Hyderabad / Secunderabad",
+      "selectors": [".job-card", ".job-title"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?location=pune&keyword=engineer",
+      "type": "location",
+      "title": "Engineering Jobs in Pune",
+      "selectors": [".job-card", ".job-title"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?experience=0-2&keyword=engineer",
+      "type": "entry-level",
+      "title": "Fresher/Entry-Level Engineering Jobs",
+      "selectors": [".job-card", ".experience"]
+    },
+    {
+      "url": "https://www.herkey.com/jobs/search?work_mode=part_time&keyword=engineer",
+      "type": "part-time",
+      "title": "Part-Time Engineering Jobs for Women",
+      "selectors": [".job-card", ".job-title"]
+    },
+    {
+      "url": "interaction:hi",
+      "type": "interaction",
+      "title": "Greeting",
+      "response": "Hi there! How can I assist you today?"
+    }
+  ]
+  
