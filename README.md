@@ -70,17 +70,16 @@ To best evaluate our solution:
 
 1. **Try these sample queries**:
    - "What career paths are good for women in tech with 5 years of experience?"
-   - "How can I negotiate salary as a woman in a male-dominated field?"
    - "Are there any mentorship programs for women in leadership roles?"
-   - "What skills should I develop to transition into product management?"
+     
 
-2. **Features to test**:
+3. **Features to test**:
    - Check how the assistant responds to career-specific questions
    - Observe the encouraging tone and empowerment-focused responses
    - Test the feedback mechanism (thumbs up/down)
    - Notice the analytics panel tracking questions and feedback
 
-3. **Technical aspects to evaluate**:
+4. **Technical aspects to evaluate**:
    - Response quality and relevance
    - Speed of knowledge retrieval
    - UI/UX design and accessibility
