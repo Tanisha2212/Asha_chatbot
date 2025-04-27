@@ -53,7 +53,7 @@ HerKey Asha is an AI-powered career assistant specifically designed to help wome
 
 5. Run the application:
    ```
-   streamlit run main.py
+   streamlit run asha_chatbot.py
    ```
 
 6. The application should now be running at `http://localhost:8501`
