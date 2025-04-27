@@ -42,13 +42,13 @@ HerKey Asha is an AI-powered career assistant specifically designed to help wome
    pip install -r requirements.txt
    ```
 
-4. Set up your environment variables:
+4. Set up your environment variables:(make an env file)
    ```
-   export HF_TOKEN=your_huggingface_token
+    HF_TOKEN=your_huggingface_token
    ```
    On Windows:
    ```
-   set HF_TOKEN=your_huggingface_token
+   HF_TOKEN=your_huggingface_token
    ```
 
 5. Run the application:
@@ -96,7 +96,7 @@ Our goal is to create an accessible tool that empowers women throughout their ca
 
 ## Contact Information
 For any questions or technical support during evaluation:
-- Email: team@herkey-asha.com
-- Project Lead: [Your Name] - [your contact information]
+- Email: raoranetanisha04@gmail.com
+- Project Lead: Tanisha Raorane 
 
 Thank you for considering our project!
