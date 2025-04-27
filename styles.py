@@ -71,7 +71,7 @@ def apply_custom_css():
     }}
     
     .stButton>button {{
-        background-color: {PURPLE_PRIMARY};
+        background-color: #7D3E81;
         color: white;
         border-radius: 20px;
         border: none;
@@ -130,7 +130,10 @@ def apply_custom_css():
     .stChatInput>div {{
         background-color: white !important;
     }}
-    
+    .stChatInput textarea::placeholder {{
+    color: #888888 !important;
+    opacity: 1 !important;
+}}
     .stChatInput textarea {{
         background-color: white !important;
         color: #333333 !important;
